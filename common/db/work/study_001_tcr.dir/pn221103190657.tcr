@@ -1,0 +1,23 @@
+#Start recording tcl command: 11/3/2022 18:44:48
+#Project Location: C:/Users/eidos/Desktop/common/db/work; Project name: study_001
+prj_project new -name "study_001" -impl "impl1" -dev LCMXO2-2000ZE-1TG100C -synthesis "synplify"
+prj_src add "C:/Users/eidos/Desktop/common/db/design/ci_if_cdc.v" "C:/Users/eidos/Desktop/common/db/design/debounce.v" "C:/Users/eidos/Desktop/common/db/design/fpga_clk_modules.v" "C:/Users/eidos/Desktop/common/db/design/stim_cg_fsm.v" "C:/Users/eidos/Desktop/common/db/top/ci_stim_fpga.v"
+prj_project save
+prj_src add "C:/Users/eidos/Desktop/common/db/sdc/common.sdc"
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 11/3/2022 19:06:57

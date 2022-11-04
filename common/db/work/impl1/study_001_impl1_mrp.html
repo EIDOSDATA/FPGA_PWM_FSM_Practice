@@ -1,0 +1,2310 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+     Lattice Mapping Report File for Design Module 'ci_stim_fpga_wrapper'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-2000ZE -t TQFP100 -s 1 -oc Commercial
+     study_001_impl1.ngd -o study_001_impl1_map.ncd -pr study_001_impl1.prf -mp
+     study_001_impl1.mrp -lpf
+     C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf
+     -lpf C:/Users/eidos/Desktop/common/db/work/study_001.lpf -c 0 -gui -msgset
+     C:/Users/eidos/Desktop/common/db/work/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-2000ZETQFP100
+Target Performance:   1
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.1.454
+Mapped on:  11/03/22  19:05:26
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    235 out of  2352 (10%)
+      PFU registers:          196 out of  2112 (9%)
+      PIO registers:           39 out of   240 (16%)
+   Number of SLICEs:       138 out of  1056 (13%)
+      SLICEs as Logic/ROM:    138 out of  1056 (13%)
+      SLICEs as RAM:            0 out of   792 (0%)
+      SLICEs as Carry:         39 out of  1056 (4%)
+   Number of LUT4s:        275 out of  2112 (13%)
+      Number used as logic LUTs:        197
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       78
+      Number used as shift registers:     0
+   Number of PIO sites used: 65 + 4(JTAG) out of 80 (86%)
+   Number of block RAMs:  0 out of 8 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  3
+     Net sw1_az: 7 loads, 7 rising, 0 falling (Driver: PIO sw1_a )
+     Net w_div4_clk: 30 loads, 30 rising, 0 falling (Driver:
+
+     u_div4_clk/r_gen_clk )
+     Net sw2_az: 4 loads, 4 rising, 0 falling (Driver: PIO sw2_a )
+   Number of Clock Enables:  34
+     Net sw2_counter26_i: 2 loads, 2 LSLICEs
+     Net c_channel_0_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/u_sync_fsm_trigger/r_master_en_RNO_0_0: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/u_sync_fsm_trigger/r_slave_en8: 1 loads, 1 LSLICEs
+     Net c_duration_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
+     Net c_channel_1_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/u_sync_anode_phase_en/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm/u_sync_anode_phase_en/un1_i_men_1_0: 1 loads, 1 LSLICEs
+     Net sw1_b_c: 1 loads, 1 LSLICEs
+     Net un1_c_dac_amp_1_0_sqmuxa_1_i[0]: 4 loads, 4 LSLICEs
+     Net c_rate_1_sqmuxa_i: 4 loads, 4 LSLICEs
+     Net un1_c_dac_amp_0_0_sqmuxa[0]: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/u_sync_cathod_phase_en/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 16 loads, 0 LSLICEs
+     Net u_cg_fsm/u_sync_cathod_phase_en/un1_i_men_1: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_master_en_RNO_0:
+     1 loads, 1 LSLICEs
+     Net u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_slave_en8: 2
+     loads, 2 LSLICEs
+     Net u_cg_fsm.w_search_disabled_channel_phase_end_p: 6 loads, 0 LSLICEs
+     Net u_cg_fsm/u_sync_trigger/r_master_en_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/u_sync_trigger/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm/w_sync_trigger: 8 loads, 8 LSLICEs
+     Net u_cg_fsm/r_cathod_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_anode_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_search_disabled_channel_phase_RNI843J1: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/r_search_disabled_channel_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/un1_r_sync_search_disabled_channel_phase_end_p_d_g: 1 loads, 1
+     LSLICEs
+     Net u_cg_fsm/r_rate_cnte: 5 loads, 5 LSLICEs
+     Net u_cg_fsm/un1_i_polarity_1: 16 loads, 16 LSLICEs
+     Net u_cg_fsm/un1_c_next_state_0_sqmuxa_1_i: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_interval_cnte: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/r_duration_cnte: 5 loads, 5 LSLICEs
+     Net u_trigger_en/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_trigger_en/un1_i_men_1_1: 1 loads, 1 LSLICEs
+     Net un1_w_async_ack_mode_transition_p: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net i_rst_n_c merged into GSR:  235
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net display_item_num[2]: 26 loads
+     Net sw2_counter26: 18 loads
+     Net sw2_counter[2]: 17 loads
+     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 16 loads
+     Net u_cg_fsm/un1_i_polarity_1: 16 loads
+     Net sw2_counter[0]: 15 loads
+     Net sw2_counter[1]: 15 loads
+     Net CO0: 13 loads
+     Net polarity_c[2]: 12 loads
+     Net sw2_b_c: 10 loads
+
+
+
+
+
+
+   Number of warnings:  304
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(6): Semantic error in "FREQUENCY NET "w_clk" 4.000000 MHz ;": w_clk
+     matches no clock nets in the design.  This preference has been disabled.
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(11): Semantic error in "FREQUENCY NET "w_div64_clk" 0.100000 MHz
+     ;": w_div64_clk matches no clock nets in the design.  This preference has
+     been disabled.
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(12): Semantic error in "FREQUENCY NET "w_div64x64_clk" 0.100000 MHz
+     ;": w_div64x64_clk matches no clock nets in the design.  This preference
+     has been disabled.
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(22): Semantic error in "BLOCK PATH FROM CLKNET "w_clk" TO CLKNET
+     "sw1_az" ;": w_clk matches no clock nets in the design.  This preference
+     has been disabled.
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(23): Semantic error in "BLOCK PATH FROM CLKNET "sw1_az" TO CLKNET
+     "w_clk" ;": w_clk matches no clock nets in the design.  This preference has
+     been disabled.
+WARNING - map: C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synpl
+     ify.lpf(24): Semantic error in "BLOCK PATH FROM CLKNET "sw2_az" TO CLKNET
+     "w_clk" ;": w_clk matches no clock nets in the design.  This preference has
+     been disabled.
+WARNING - map: PULLMODE=DOWN  for polarity_pad[2]/IOBUF violates legal
+     combination and is ignored.
+WARNING - map: Register mode_disp_en has a clock signal tied to GND.
+WARNING - map: Register r_db_sw1_pb_d[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[7] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[1] has a clock signal tied to GND.
+WARNING - map: Register u_div4_clk/r_gen_clk has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/u_sync_fsm_trigger/r_slave_en[1] has a clock
+     signal tied to GND.
+WARNING - map: Register u_cg_fsm/u_sync_fsm_trigger/r_slave_en[2] has a clock
+     signal tied to GND.
+WARNING - map: Register u_cg_fsm/u_sync_anode_phase_en/r_master_en has a clock
+     signal tied to GND.
+WARNING - map: Register u_cg_fsm/u_sync_cathod_phase_en/r_master_en has a clock
+     signal tied to GND.
+WARNING - map: Register
+     u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_master_en has a clock
+     signal tied to GND.
+WARNING - map: Register u_cg_fsm/u_sync_trigger/r_master_en has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_sync_cathod_phase[1] has a clock signal tied
+     to GND.
+WARNING - map: Register u_cg_fsm/r_sync_cathod_phase[2] has a clock signal tied
+     to GND.
+WARNING - map: Register u_cg_fsm/r_state[1] has a clock signal tied to GND.
+
+WARNING - map: Register u_cg_fsm/r_state[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_state[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_state[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel_phase has a clock
+     signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[0] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[1] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[2] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[3] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[4] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[5] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[6] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_search_disabled_channel[7] has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[6] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_rate[7] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_interval_value[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_phase has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[3] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[4] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[5] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[6] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_interval_cnt[7] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm/r_duration[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_duration[6] has a clock signal tied to GND.
+
+WARNING - map: Register u_cg_fsm/r_duration[7] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_disabled_dac_sel_found_d has a clock signal
+     tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[6] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_1[7] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[6] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_channel_0[7] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_cathod_phase has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm/r_anode_phase has a clock signal tied to GND.
+WARNING - map: Register u_trigger_en/r_slave_en[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_trigger_en/r_slave_en[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_trigger_en/r_master_en has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[3] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[4] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[5] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[6] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac1_valio[7] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[3] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[4] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[5] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[6] has a clock signal tied to
+     GND.
+
+WARNING - map: Register u_cg_fsm_r_stim_dac0_valio[7] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_comp_enio has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[6] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_caio[7] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg1_selio[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg1_selio[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg1_selio[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg0_selio[0] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg0_selio[1] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_bcg0_selio[2] has a clock signal tied to
+     GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[0] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[1] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[2] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[3] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[4] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[5] has a clock signal tied to GND.
+WARNING - map: Register u_cg_fsm_r_stim_anio[6] has a clock signal tied to GND.
+WARNING - map: Register r_req_mode_transition has a clock signal tied to GND.
+WARNING - map: Register r_rate[0] has a clock signal tied to GND.
+WARNING - map: Register r_rate[1] has a clock signal tied to GND.
+WARNING - map: Register r_rate[2] has a clock signal tied to GND.
+WARNING - map: Register r_rate[3] has a clock signal tied to GND.
+WARNING - map: Register r_rate[4] has a clock signal tied to GND.
+WARNING - map: Register r_rate[5] has a clock signal tied to GND.
+WARNING - map: Register r_rate[6] has a clock signal tied to GND.
+WARNING - map: Register r_rate[7] has a clock signal tied to GND.
+WARNING - map: Register r_mode[0] has a clock signal tied to GND.
+WARNING - map: Register r_mode[1] has a clock signal tied to GND.
+WARNING - map: Register r_mode[2] has a clock signal tied to GND.
+WARNING - map: Register r_duration[0] has a clock signal tied to GND.
+WARNING - map: Register r_duration[1] has a clock signal tied to GND.
+WARNING - map: Register r_duration[2] has a clock signal tied to GND.
+WARNING - map: Register r_duration[3] has a clock signal tied to GND.
+WARNING - map: Register r_duration[4] has a clock signal tied to GND.
+WARNING - map: Register r_duration[5] has a clock signal tied to GND.
+WARNING - map: Register r_duration[6] has a clock signal tied to GND.
+WARNING - map: Register r_duration[7] has a clock signal tied to GND.
+WARNING - map: Register r_db_sw1_pb_d[0] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[0] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[1] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[2] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[3] has a clock signal tied to GND.
+
+WARNING - map: Register r_dac_amp_1[4] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[5] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[6] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_1[7] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[0] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[1] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[2] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[3] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[4] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[5] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[6] has a clock signal tied to GND.
+WARNING - map: Register r_dac_amp_0[7] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[0] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[1] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[2] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[3] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[4] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[5] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[6] has a clock signal tied to GND.
+WARNING - map: Register r_channel_1[7] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[0] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[2] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[3] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[4] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[5] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[6] has a clock signal tied to GND.
+WARNING - map: Register r_channel_0[7] has a clock signal tied to GND.
+WARNING - map: Register r_async_ack_mode_transition[1] has a clock signal tied
+     to GND.
+WARNING - map: Register r_async_ack_mode_transition[2] has a clock signal tied
+     to GND.
+WARNING - map: Register pb_p_test has a clock signal tied to GND.
+WARNING - map: Specified location site name "T11" is not valid for led_out[0].
+     Location directive ignored.
+WARNING - map: Specified location site name "A10" is not valid for i_rst_n.
+     Location directive ignored.
+WARNING - map: Specified location site name "N13" is not valid for
+     stim_bcg1_sel[2]. Location directive ignored.
+WARNING - map: Specified location site name "L16" is not valid for
+     stim_bcg1_sel[1]. Location directive ignored.
+WARNING - map: Specified location site name "L14" is not valid for
+     stim_bcg1_sel[0]. Location directive ignored.
+WARNING - map: Specified location site name "N14" is not valid for
+     stim_bcg0_sel[2]. Location directive ignored.
+WARNING - map: Specified location site name "M16" is not valid for
+     stim_bcg0_sel[1]. Location directive ignored.
+WARNING - map: Specified location site name "L15" is not valid for
+     stim_bcg0_sel[0]. Location directive ignored.
+WARNING - map: Specified location site name "L13" is not valid for
+     stim_dac1_val[7]. Location directive ignored.
+WARNING - map: Specified location site name "K16" is not valid for
+     stim_dac1_val[6]. Location directive ignored.
+WARNING - map: Specified location site name "K14" is not valid for
+     stim_dac1_val[5]. Location directive ignored.
+WARNING - map: Specified location site name "K11" is not valid for
+     stim_dac1_val[4]. Location directive ignored.
+
+WARNING - map: Specified location site name "J15" is not valid for
+     stim_dac1_val[3]. Location directive ignored.
+WARNING - map: Specified location site name "J13" is not valid for
+     stim_dac1_val[2]. Location directive ignored.
+WARNING - map: Specified location site name "J11" is not valid for
+     stim_dac1_val[1]. Location directive ignored.
+WARNING - map: Specified location site name "H15" is not valid for
+     stim_dac1_val[0]. Location directive ignored.
+WARNING - map: Specified location site name "L12" is not valid for
+     stim_dac0_val[7]. Location directive ignored.
+WARNING - map: Specified location site name "K15" is not valid for
+     stim_dac0_val[6]. Location directive ignored.
+WARNING - map: Specified location site name "K13" is not valid for
+     stim_dac0_val[5]. Location directive ignored.
+WARNING - map: Specified location site name "J16" is not valid for
+     stim_dac0_val[4]. Location directive ignored.
+WARNING - map: Specified location site name "J14" is not valid for
+     stim_dac0_val[3]. Location directive ignored.
+WARNING - map: Specified location site name "J12" is not valid for
+     stim_dac0_val[2]. Location directive ignored.
+WARNING - map: Specified location site name "H16" is not valid for
+     stim_dac0_val[1]. Location directive ignored.
+WARNING - map: Specified location site name "H13" is not valid for
+     stim_dac0_val[0]. Location directive ignored.
+WARNING - map: Specified location site name "E16" is not valid for stim_ca[7].
+     Location directive ignored.
+WARNING - map: Specified location site name "E11" is not valid for stim_ca[6].
+     Location directive ignored.
+WARNING - map: Specified location site name "D15" is not valid for stim_ca[5].
+     Location directive ignored.
+WARNING - map: Specified location site name "D13" is not valid for stim_ca[4].
+     Location directive ignored.
+WARNING - map: Specified location site name "C15" is not valid for stim_ca[3].
+     Location directive ignored.
+WARNING - map: Specified location site name "C13" is not valid for stim_ca[2].
+     Location directive ignored.
+WARNING - map: Specified location site name "B15" is not valid for stim_ca[1].
+     Location directive ignored.
+WARNING - map: Specified location site name "A15" is not valid for stim_ca[0].
+     Location directive ignored.
+WARNING - map: Specified location site name "E13" is not valid for stim_an[7].
+     Location directive ignored.
+WARNING - map: Specified location site name "D16" is not valid for stim_an[6].
+     Location directive ignored.
+WARNING - map: Specified location site name "D14" is not valid for stim_an[5].
+     Location directive ignored.
+WARNING - map: Specified location site name "C16" is not valid for stim_an[4].
+     Location directive ignored.
+WARNING - map: Specified location site name "C14" is not valid for stim_an[3].
+     Location directive ignored.
+WARNING - map: Specified location site name "B16" is not valid for stim_an[2].
+     Location directive ignored.
+WARNING - map: Specified location site name "B14" is not valid for stim_an[1].
+     Location directive ignored.
+WARNING - map: Specified location site name "A14" is not valid for stim_an[0].
+     Location directive ignored.
+
+WARNING - map: Specified location site name "N16" is not valid for
+     stim_comp_en_n. Location directive ignored.
+WARNING - map: Specified location site name "L4" is not valid for data_out.
+     Location directive ignored.
+WARNING - map: Specified location site name "L5" is not valid for clk_out.
+     Location directive ignored.
+WARNING - map: Specified location site name "M4" is not valid for lv_oe_n.
+     Location directive ignored.
+WARNING - map: Specified location site name "M1" is not valid for lv_dir.
+     Location directive ignored.
+WARNING - map: Specified location site name "D7" is not valid for led_out[15].
+     Location directive ignored.
+WARNING - map: Specified location site name "E5" is not valid for led_out[14].
+     Location directive ignored.
+WARNING - map: Specified location site name "E6" is not valid for led_out[13].
+     Location directive ignored.
+WARNING - map: Specified location site name "E8" is not valid for led_out[12].
+     Location directive ignored.
+WARNING - map: Specified location site name "F4" is not valid for led_out[11].
+     Location directive ignored.
+WARNING - map: Specified location site name "H6" is not valid for led_out[10].
+     Location directive ignored.
+WARNING - map: Specified location site name "J5" is not valid for led_out[9].
+     Location directive ignored.
+WARNING - map: Specified location site name "J6" is not valid for led_out[8].
+     Location directive ignored.
+WARNING - map: Specified location site name "R10" is not valid for led_out[7].
+     Location directive ignored.
+WARNING - map: Specified location site name "R11" is not valid for led_out[6].
+     Location directive ignored.
+WARNING - map: Specified location site name "R13" is not valid for led_out[5].
+     Location directive ignored.
+WARNING - map: Specified location site name "R14" is not valid for led_out[4].
+     Location directive ignored.
+WARNING - map: Specified location site name "R15" is not valid for led_out[3].
+     Location directive ignored.
+WARNING - map: Specified location site name "R16" is not valid for led_out[2].
+     Location directive ignored.
+WARNING - map: Specified location site name "T10" is not valid for led_out[1].
+     Location directive ignored.
+WARNING - map: Specified location site name "D3" is not valid for polarity[2].
+     Location directive ignored.
+WARNING - map: Specified location site name "P15" is not valid for sw2_b.
+     Location directive ignored.
+WARNING - map: Specified location site name "P14" is not valid for sw2_a.
+     Location directive ignored.
+WARNING - map: Specified location site name "P11" is not valid for sw1_b.
+     Location directive ignored.
+WARNING - map: Specified location site name "P10" is not valid for sw1_a.
+     Location directive ignored.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[0]" SITE "T11" ;": Unable
+     to find site T11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "i_rst_n" SITE "A10" ;": Unable to
+     find site A10 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg1_sel[2]" SITE "N13" ;":
+     Unable to find site N13 in the device. This preference has been disabled.
+
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg1_sel[1]" SITE "L16" ;":
+     Unable to find site L16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg1_sel[0]" SITE "L14" ;":
+     Unable to find site L14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg0_sel[2]" SITE "N14" ;":
+     Unable to find site N14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg0_sel[1]" SITE "M16" ;":
+     Unable to find site M16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_bcg0_sel[0]" SITE "L15" ;":
+     Unable to find site L15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[7]" SITE "L13" ;":
+     Unable to find site L13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[6]" SITE "K16" ;":
+     Unable to find site K16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[5]" SITE "K14" ;":
+     Unable to find site K14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[4]" SITE "K11" ;":
+     Unable to find site K11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[3]" SITE "J15" ;":
+     Unable to find site J15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[2]" SITE "J13" ;":
+     Unable to find site J13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[1]" SITE "J11" ;":
+     Unable to find site J11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac1_val[0]" SITE "H15" ;":
+     Unable to find site H15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[7]" SITE "L12" ;":
+     Unable to find site L12 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[6]" SITE "K15" ;":
+     Unable to find site K15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[5]" SITE "K13" ;":
+     Unable to find site K13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[4]" SITE "J16" ;":
+     Unable to find site J16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[3]" SITE "J14" ;":
+     Unable to find site J14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[2]" SITE "J12" ;":
+     Unable to find site J12 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[1]" SITE "H16" ;":
+     Unable to find site H16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_dac0_val[0]" SITE "H13" ;":
+     Unable to find site H13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[7]" SITE "E16" ;": Unable
+     to find site E16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[6]" SITE "E11" ;": Unable
+     to find site E11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[5]" SITE "D15" ;": Unable
+     to find site D15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[4]" SITE "D13" ;": Unable
+     to find site D13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[3]" SITE "C15" ;": Unable
+     to find site C15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[2]" SITE "C13" ;": Unable
+     to find site C13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[1]" SITE "B15" ;": Unable
+     to find site B15 in the device. This preference has been disabled.
+
+WARNING - map: Semantic error in "LOCATE COMP "stim_ca[0]" SITE "A15" ;": Unable
+     to find site A15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[7]" SITE "E13" ;": Unable
+     to find site E13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[6]" SITE "D16" ;": Unable
+     to find site D16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[5]" SITE "D14" ;": Unable
+     to find site D14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[4]" SITE "C16" ;": Unable
+     to find site C16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[3]" SITE "C14" ;": Unable
+     to find site C14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[2]" SITE "B16" ;": Unable
+     to find site B16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[1]" SITE "B14" ;": Unable
+     to find site B14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_an[0]" SITE "A14" ;": Unable
+     to find site A14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "stim_comp_en_n" SITE "N16" ;":
+     Unable to find site N16 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "data_out" SITE "L4" ;": Unable to
+     find site L4 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "clk_out" SITE "L5" ;": Unable to
+     find site L5 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "lv_oe_n" SITE "M4" ;": Unable to
+     find site M4 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "lv_dir" SITE "M1" ;": Unable to
+     find site M1 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[15]" SITE "D7" ;": Unable
+     to find site D7 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[14]" SITE "E5" ;": Unable
+     to find site E5 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[13]" SITE "E6" ;": Unable
+     to find site E6 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[12]" SITE "E8" ;": Unable
+     to find site E8 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[11]" SITE "F4" ;": Unable
+     to find site F4 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[10]" SITE "H6" ;": Unable
+     to find site H6 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[9]" SITE "J5" ;": Unable
+     to find site J5 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[8]" SITE "J6" ;": Unable
+     to find site J6 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[7]" SITE "R10" ;": Unable
+     to find site R10 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[6]" SITE "R11" ;": Unable
+     to find site R11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[5]" SITE "R13" ;": Unable
+     to find site R13 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[4]" SITE "R14" ;": Unable
+     to find site R14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[3]" SITE "R15" ;": Unable
+     to find site R15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "led_out[2]" SITE "R16" ;": Unable
+     to find site R16 in the device. This preference has been disabled.
+
+WARNING - map: Semantic error in "LOCATE COMP "led_out[1]" SITE "T10" ;": Unable
+     to find site T10 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "polarity[2]" SITE "D3" ;": Unable
+     to find site D3 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "sw2_b" SITE "P15" ;": Unable to
+     find site P15 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "sw2_a" SITE "P14" ;": Unable to
+     find site P14 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "sw1_b" SITE "P11" ;": Unable to
+     find site P11 in the device. This preference has been disabled.
+WARNING - map: Semantic error in "LOCATE COMP "sw1_a" SITE "P10" ;": Unable to
+     find site P10 in the device. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led_out[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| i_rst_n             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| stim_bcg1_sel[2]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_bcg1_sel[1]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_bcg1_sel[0]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_bcg0_sel[2]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_bcg0_sel[1]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_bcg0_sel[0]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[7]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[6]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[5]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[4]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[3]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[2]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[1]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac1_val[0]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[7]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[6]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+| stim_dac0_val[5]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[4]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[3]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[2]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[1]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_dac0_val[0]    | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[7]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[6]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[5]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[4]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[3]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[2]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[1]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_ca[0]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[7]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[6]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[5]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[4]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[3]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[2]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[1]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_an[0]          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| stim_comp_en_n      | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| data_out            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk_out             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lv_oe_n             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| lv_dir              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[15]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| led_out[14]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[13]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[12]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[11]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[10]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[9]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[8]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[7]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[6]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[5]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[4]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[3]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[2]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| polarity[2]         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sw2_b               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sw2_a               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sw1_b               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sw1_a               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block u_cg_fsm.c_stim_an[6]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[5]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[4]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[3]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[2]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[1]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[0]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+
+Block u_cg_fsm.r_channel_0[2]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_channel_0[1]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_channel_0[0]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.c_stim_ca[7]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[6]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[5]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[4]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[3]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[2]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[1]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[0]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_comp_en_n\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[7]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[6]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[5]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[4]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[3]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[2]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[1]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[0]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+
+Block u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0\000/BUF0/BUF0 undriven or does not
+     drive anything - clipped.
+Block u_cg_fsm.c_stim_an[7]\000/BUF0\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[6]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[5]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[4]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[3]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[2]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[1]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_an[0]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.r_channel_0[2]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_channel_0[1]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_channel_0[0]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_ca[7]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[6]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[5]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[4]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[3]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[2]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[1]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_ca[0]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm.c_stim_comp_en_n\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_dac_amp_0[7]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[6]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+
+Block u_cg_fsm.r_dac_amp_0[5]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[4]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[3]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[2]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[1]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_dac_amp_0[0]\000/BUF0/BUF0 undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0/BUF0 undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm.c_stim_an[7]\000/BUF0/BUF0 undriven or does not drive anything -
+     clipped.
+Block sw1_pb_pad undriven or does not drive anything - clipped.
+Block sw2_pb_pad undriven or does not drive anything - clipped.
+Block polarity_pad[0] undriven or does not drive anything - clipped.
+Block polarity_pad[1] undriven or does not drive anything - clipped.
+Block r_async_ack_mode_transition[0] undriven or does not drive anything -
+     clipped.
+Block r_db_sw2_pb_d[1] undriven or does not drive anything - clipped.
+Block r_db_sw2_pb_d[0] undriven or does not drive anything - clipped.
+Block u_debounce_sw2_r_pb_inio[0] undriven or does not drive anything - clipped.
+     
+Block pb_p_test_0 undriven or does not drive anything - clipped.
+Block mode_disp_en_RNO undriven or does not drive anything - clipped.
+Block u_trigger_en/o_sen undriven or does not drive anything - clipped.
+Block u_trigger_en/r_slave_en[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_interval_cnt_cry_0[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_cnt_cry_0[1] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_cnt_cry_0[3] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_cnt_cry_0[5] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_cnt_s_0[7] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[7] undriven or does not drive anything -
+     clipped.
+
+Block u_cg_fsm/r_stim_dac1_val_2[6] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[5] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[4] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[3] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[2] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[1] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_dac1_val_2[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_cnt15_i undriven or does not drive anything - clipped.
+     
+Block u_cg_fsm/c_stim_ca_1_sqmuxa_1 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_set_mode_monopolar8 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_stim_an_1_sqmuxa_1_i_o3 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_set_mode_monopolar9 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a2[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a2_0[0] undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm/c_channel_0[5] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_duration[5] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_1[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_duration[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_rate[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_0[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_0[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_0[2] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_0[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_channel_0[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_rate[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_state_ns_o4[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3_1[1] undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a2_1[0] undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3_2[2] undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3[1] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3_0[0] undriven or does not drive anything
+     - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_state_ns[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_state_ns[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_disabled_dac_sel_0_a3[2] undriven or does not drive anything -
+     clipped.
+
+Block u_cg_fsm/c_stim_comp_en_n_f0 undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_stim_an_1_a3[7] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_stim_bcg1_sel_2[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_stim_bcg1_sel_2[1] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_stim_an_1[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_stim_bcg1_sel_2[2] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_stim_ca[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_an_1[7] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_ca[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_an_1[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_an_1[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_an_1[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_an_1[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_ca[7] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_ca[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_ca[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/c_stim_ca[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_state_ns[2] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_state_RNO[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[7] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[5] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[2] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_0[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[7] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[6] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[5] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[3] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[2] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[1] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_dac_amp_1[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_state[0] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_stim_comp_en_n undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_sync_anode_phase[2] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_sync_anode_phase[1] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_sync_anode_phase[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_sync_cathod_phase[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_interval_value_RNO[0] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/c_map_cathod_channel_122_RNIL4RD undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/c_map_cathod_channel_122_RNI1FSE undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/c_map_cathod_channel_125_RNI7UQD undriven or does not drive
+
+     anything - clipped.
+Block u_cg_fsm/c_map_cathod_channel_125_RNIRJPC undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_state_RNO[4] undriven or does not drive anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[7] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[1] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[2] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[3] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[4] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[5] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[6] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/r_stim_bcg1_sel_2_RNO[2] undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/r_search_disabled_channel_RNO[0] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/r_master_en_RNO undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/c_channel_0[4] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/c_channel_0[7] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/c_rate[7] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/c_duration[4] undriven or does not drive
+     anything - clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/o_sen undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0] undriven or does not drive
+     anything - clipped.
+Block u_debounce_sw1/o_db_pb undriven or does not drive anything - clipped.
+Block u_debounce_sw1/r_pb_in[2] undriven or does not drive anything - clipped.
+Block u_debounce_sw1/r_pb_in[1] undriven or does not drive anything - clipped.
+Block u_debounce_sw2/o_db_pb undriven or does not drive anything - clipped.
+Block u_debounce_sw2/r_pb_in[2] undriven or does not drive anything - clipped.
+Block u_debounce_sw2/r_pb_in[1] undriven or does not drive anything - clipped.
+Block u_div4_clk/div4_count_RNO undriven or does not drive anything - clipped.
+Block u_div4_clk/div4_count undriven or does not drive anything - clipped.
+Block u_div4_clk/r_gen_clk_0 undriven or does not drive anything - clipped.
+Block u_div64_clk/div64_count_cry_0[0] undriven or does not drive anything -
+     clipped.
+Block u_div64_clk/div64_count_cry_0[1] undriven or does not drive anything -
+     clipped.
+Block u_div64_clk/div64_count_cry_0[3] undriven or does not drive anything -
+     clipped.
+Block u_div64_clk/div64_count15_1 undriven or does not drive anything - clipped.
+     
+Block u_div64_clk/div64_count15 undriven or does not drive anything - clipped.
+Block u_div64_clk/div64_count[4] undriven or does not drive anything - clipped.
+Block u_div64_clk/div64_count[3] undriven or does not drive anything - clipped.
+
+Block u_div64_clk/div64_count[2] undriven or does not drive anything - clipped.
+Block u_div64_clk/div64_count[1] undriven or does not drive anything - clipped.
+Block u_div64_clk/div64_count[0] undriven or does not drive anything - clipped.
+Block u_div64_clk/r_gen_clk undriven or does not drive anything - clipped.
+Block u_div64_clk/r_gen_clk_0 undriven or does not drive anything - clipped.
+Block u_div64x64_clk/div64_count_cry_0[0] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count_cry_0[1] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count_cry_0[3] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count15_1 undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count15 undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count[4] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count[3] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count[2] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count[1] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/div64_count[0] undriven or does not drive anything -
+     clipped.
+Block u_div64x64_clk/r_gen_clk undriven or does not drive anything - clipped.
+Block u_div64x64_clk/r_gen_clk_0 undriven or does not drive anything - clipped.
+Block u_div2_clk/div2_count_RNO undriven or does not drive anything - clipped.
+Block u_div2_clk/div2_count undriven or does not drive anything - clipped.
+Block u_div2_clk/r_gen_clk undriven or does not drive anything - clipped.
+Block u_div2_clk/r_gen_clk_0 undriven or does not drive anything - clipped.
+Block u_debounce_sw1_r_pb_inio[0] undriven or does not drive anything - clipped.
+     
+Block stim_comp_err_pad[0] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[1] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[2] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[3] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[4] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[5] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[6] undriven or does not drive anything - clipped.
+Block stim_comp_err_pad[7] undriven or does not drive anything - clipped.
+Block u_trigger_en/GND undriven or does not drive anything - clipped.
+Block u_trigger_en/VCC undriven or does not drive anything - clipped.
+Block u_cg_fsm/u_sync_trigger/VCC undriven or does not drive anything - clipped.
+     
+Block u_cg_fsm/u_sync_trigger/GND undriven or does not drive anything - clipped.
+     
+Block u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/VCC undriven or does
+     not drive anything - clipped.
+Block u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/GND undriven or does
+     not drive anything - clipped.
+Block u_cg_fsm/u_sync_cathod_phase_en/GND undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/u_sync_cathod_phase_en/VCC undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/GND undriven or does not drive anything -
+
+     clipped.
+Block u_cg_fsm/u_sync_anode_phase_en/VCC undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/u_sync_fsm_trigger/VCC undriven or does not drive anything -
+     clipped.
+Block u_cg_fsm/u_sync_fsm_trigger/GND undriven or does not drive anything -
+     clipped.
+Block u_debounce_sw1/GND undriven or does not drive anything - clipped.
+Block u_debounce_sw1/VCC undriven or does not drive anything - clipped.
+Block u_debounce_sw2/GND undriven or does not drive anything - clipped.
+Block u_debounce_sw2/VCC undriven or does not drive anything - clipped.
+Block u_div4_clk/VCC undriven or does not drive anything - clipped.
+Block u_div4_clk/GND undriven or does not drive anything - clipped.
+Block u_div64_clk/VCC undriven or does not drive anything - clipped.
+Block u_div64x64_clk/VCC undriven or does not drive anything - clipped.
+Block u_div2_clk/VCC undriven or does not drive anything - clipped.
+Block u_div2_clk/GND undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[6]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[5]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[4]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[3]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[2]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[1]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[0]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_channel_0[2]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_channel_0[1]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_channel_0[0]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[7]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[6]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[5]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[4]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[3]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[2]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[1]\000/BUF0\000/BUF0 undriven or does not drive
+
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[0]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_comp_en_n\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[7]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[6]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[5]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[4]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[3]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[2]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[1]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[0]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[7]\000/BUF0\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[6]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[5]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[4]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[3]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[2]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[1]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_channel_0[2]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_channel_0[1]\000/BUF0 undriven or does not drive anything -
+
+     clipped.
+Signal u_cg_fsm.r_channel_0[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_ca[7]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[6]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[5]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[4]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[3]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[2]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[1]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_ca[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_comp_en_n\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[7]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[6]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[5]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[4]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[3]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[2]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[1]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_dac_amp_0[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0 undriven or does not drive
+
+     anything - clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm.c_stim_an[7]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal i_rst_n_c_i was merged into signal i_rst_n_c
+Signal sw1_pb undriven or does not drive anything - clipped.
+Signal sw2_pb undriven or does not drive anything - clipped.
+Signal polarity[0] undriven or does not drive anything - clipped.
+Signal polarity[1] undriven or does not drive anything - clipped.
+Signal r_async_ack_mode_transition[0] undriven or does not drive anything -
+     clipped.
+Signal sw2_pb_c undriven or does not drive anything - clipped.
+Signal pb_p_test_0 undriven or does not drive anything - clipped.
+Signal r_db_sw2_pb_d[0] undriven or does not drive anything - clipped.
+Signal r_db_sw2_pb_d[1] undriven or does not drive anything - clipped.
+Signal u_trigger_en/r_slave_en[0] undriven or does not drive anything - clipped.
+     
+Signal u_cg_fsm/r_interval_cnt_cry[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_cry[2] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_cry[4] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_cry[6] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[6] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[5] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[4] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[3] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[2] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[1] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.r_stim_dac1_val_2[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt undriven or does not drive anything - clipped.
+Signal polarity_c[1] undriven or does not drive anything - clipped.
+Signal polarity_c[0] undriven or does not drive anything - clipped.
+Signal c_channel_0[5] undriven or does not drive anything - clipped.
+Signal c_duration[5] undriven or does not drive anything - clipped.
+Signal c_channel_1[0] undriven or does not drive anything - clipped.
+Signal c_duration[1] undriven or does not drive anything - clipped.
+Signal c_rate[3] undriven or does not drive anything - clipped.
+Signal c_channel_0[0] undriven or does not drive anything - clipped.
+Signal c_channel_0[2] undriven or does not drive anything - clipped.
+Signal c_channel_0[3] undriven or does not drive anything - clipped.
+Signal c_channel_0[6] undriven or does not drive anything - clipped.
+Signal c_rate[6] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/c_disabled_dac_sel_0_a3_1[1] undriven or does not drive anything
+
+     - clipped.
+Signal u_cg_fsm/N_83 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/c_disabled_dac_sel_0_a3_2[2] undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/N_85 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_64 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[1] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_69 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_65 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_stim_bcg1_sel_2[2] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/c_set_mode_monopolar9 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_72 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_67_0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[1] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[1] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[3] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[6] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[7] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[6] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[3] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[7] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[6] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[5] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[3] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[2] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[1] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.r_dac_amp_0[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[7] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[6] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[5] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[3] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[2] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[1] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_dac_amp_1_0[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[6] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[5] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[4] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[3] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[2] undriven or does not drive anything -
+
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[1] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_state_ns[3] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_state_ns[2] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_56_i undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_state[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_state_ns[0] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_stim_comp_en_n undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_comp_en_n undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_sync_anode_phase[2] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_sync_anode_phase[1] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_sync_anode_phase[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_sync_cathod_phase[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_548_0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[2] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[2] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_ca[5] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/c_stim_ca_1_sqmuxa_1 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_an[5] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_32 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/c_set_mode_monopolar8 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_state_ns[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_67 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[7] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[1] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[2] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[3] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[4] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[5] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[6] undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/N_74 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/N_86 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/un1_i_trigger undriven or does not drive anything - clipped.
+Signal w_sync_trigger_en undriven or does not drive anything - clipped.
+Signal c_channel_0[4] undriven or does not drive anything - clipped.
+Signal c_channel_0[7] undriven or does not drive anything - clipped.
+Signal c_rate[7] undriven or does not drive anything - clipped.
+Signal c_duration[4] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/w_sync_anode_phase_en undriven or does not drive anything -
+     clipped.
+
+Signal u_cg_fsm/u_sync_anode_phase_en/c_next_state_1_sqmuxa undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0] undriven or does not drive
+     anything - clipped.
+Signal w_db_sw1_pb undriven or does not drive anything - clipped.
+Signal u_debounce_sw1/r_pb_in[2] undriven or does not drive anything - clipped.
+Signal u_debounce_sw1/r_pb_in[1] undriven or does not drive anything - clipped.
+Signal w_db_sw2_pb undriven or does not drive anything - clipped.
+Signal u_debounce_sw2/r_pb_in[2] undriven or does not drive anything - clipped.
+Signal u_debounce_sw2/r_pb_in[1] undriven or does not drive anything - clipped.
+Signal u_debounce_sw2.r_pb_in[0] undriven or does not drive anything - clipped.
+Signal u_div4_clk/div4_count_i undriven or does not drive anything - clipped.
+Signal u_div4_clk/r_gen_clk_0 undriven or does not drive anything - clipped.
+Signal u_div4_clk/div4_count undriven or does not drive anything - clipped.
+Signal u_div64_clk/div64_count_cry[0] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count_cry[2] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count15_1 undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count[4] undriven or does not drive anything - clipped.
+     
+Signal u_div64_clk/div64_count_s[4] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count[3] undriven or does not drive anything - clipped.
+     
+Signal u_div64_clk/div64_count_s[3] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count[2] undriven or does not drive anything - clipped.
+     
+Signal u_div64_clk/div64_count_s[2] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count[1] undriven or does not drive anything - clipped.
+     
+Signal u_div64_clk/div64_count_s[1] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count[0] undriven or does not drive anything - clipped.
+     
+Signal u_div64_clk/div64_count_s[0] undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/r_gen_clk_0_0 undriven or does not drive anything - clipped.
+Signal u_div64_clk/div64_count15 undriven or does not drive anything - clipped.
+Signal u_div64x64_clk/div64_count_cry[0] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_cry[2] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count15_1 undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count[4] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_s[4] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count[3] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_s[3] undriven or does not drive anything -
+     clipped.
+
+Signal u_div64x64_clk/div64_count[2] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_s[2] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count[1] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_s[1] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count[0] undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count_s[0] undriven or does not drive anything -
+     clipped.
+Signal w_div64_clk_0 undriven or does not drive anything - clipped.
+Signal u_div64x64_clk/r_gen_clk_0_1 undriven or does not drive anything -
+     clipped.
+Signal u_div64x64_clk/div64_count15 undriven or does not drive anything -
+     clipped.
+Signal u_div2_clk/div2_count_i undriven or does not drive anything - clipped.
+Signal w_div64x64_clk_0 undriven or does not drive anything - clipped.
+Signal u_div2_clk/r_gen_clk_0_2 undriven or does not drive anything - clipped.
+Signal u_div2_clk/div2_count undriven or does not drive anything - clipped.
+Signal u_debounce_sw1.r_pb_in[0] undriven or does not drive anything - clipped.
+Signal w_db_clk undriven or does not drive anything - clipped.
+Signal sw1_pb_c undriven or does not drive anything - clipped.
+Signal c_channel_0[1] undriven or does not drive anything - clipped.
+Signal u_cg_fsm.c_stim_an[7] undriven or does not drive anything - clipped.
+Signal mode_disp_en_RNO undriven or does not drive anything - clipped.
+Signal pb_p_test_0\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_async_ack_mode_transition[1]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal r_async_ack_mode_transition[0]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal r_ack_mode_transition\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal c_channel_0[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_1[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[1]\000/BUF0 undriven or does not drive anything - clipped.
+
+Signal sw1_counter[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw1_counter[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal w_db_sw1_pb\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_db_sw2_pb_d[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal w_db_sw2_pb\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw2_counter[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw2_counter[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal sw2_counter[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_rate[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_rate[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_rate[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_duration[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal c_channel_0[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal un1_r_mode_NE\000/BUF0 undriven or does not drive anything - clipped.
+Signal w_trigger_en\000/BUF0 undriven or does not drive anything - clipped.
+Signal u_trigger_en.r_slave_en[1]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_trigger_en/r_slave_en[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_trigger_en/r_master_en\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/w_sync_anode_phase_en\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_sync_cathod_phase_en\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal r_channel_0[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_0[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[3]\000/BUF0 undriven or does not drive anything - clipped.
+
+Signal r_channel_1[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_channel_1[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_0[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_dac_amp_1[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_master_en_2_1\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal r_duration[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_duration[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[7]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[6]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[5]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[4]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[3]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[2]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[1]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_interval_cnt_s[0]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/c_next_state_0_sqmuxa\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/N_548_0\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[7]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[6]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[5]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[4]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[3]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[2]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_rate[0]\000/BUF0 undriven or does not drive anything - clipped.
+
+Signal u_cg_fsm/r_search_disabled_channel_4[7]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[6]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[5]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[4]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[3]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[2]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/r_search_disabled_channel_4[1]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/un1_i_trigger\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal w_sync_trigger_en\000/BUF0 undriven or does not drive anything - clipped.
+     
+Signal u_cg_fsm/r_state_ns[4]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_state_ns[3]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_state_ns[2]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_56_i\000/BUF0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_state_ns[0]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm.c_stim_comp_en_n\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_sync_anode_phase[1]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_sync_anode_phase[0]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_debug_fsm_led[3]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_sync_cathod_phase[1]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/r_sync_cathod_phase[0]\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_debug_fsm_led[5]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal w_sync_trigger_en\000/BUF0 undriven or does not drive anything - clipped.
+     
+Signal u_cg_fsm.w_search_disabled_channel_phase_end_p\000/BUF0 undriven or does
+     not drive anything - clipped.
+Signal u_cg_fsm.c_cathod_phase_en_0_sqmuxa\000/BUF0 undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/u_sync_anode_phase_en/c_next_state_1_sqmuxa\000/BUF0 undriven or
+     does not drive anything - clipped.
+Signal u_cg_fsm/r_slave_en_2[1]\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0]\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_cg_fsm/u_sync_fsm_trigger/r_master_en\000/BUF0 undriven or does not
+     drive anything - clipped.
+Signal u_div4_clk/div4_count_i\000/BUF0 undriven or does not drive anything -
+
+     clipped.
+Signal u_div4_clk/r_gen_clk_0\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count_s[4]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/div64_count_s[3]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/div64_count_s[2]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/div64_count_s[1]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/div64_count_s[0]\000/BUF0 undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/r_gen_clk_0_0\000/BUF0 undriven or does not drive anything -
+     clipped.
+Signal c_channel_0[1]\000/BUF0 undriven or does not drive anything - clipped.
+Signal r_db_sw1_pb_d[0]\000/BUF0 undriven or does not drive anything - clipped.
+Signal mode_disp_en_RNO\000/BUF0 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/GND undriven or does not drive anything - clipped.
+Signal u_div64_clk/GND undriven or does not drive anything - clipped.
+Signal u_div64x64_clk/GND undriven or does not drive anything - clipped.
+Signal sw2_counter_cry_0_COUT[6] undriven or does not drive anything - clipped.
+Signal sw1_counter_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal sw1_counter_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal N_2 undriven or does not drive anything - clipped.
+Signal sw1_counter_cry_0_COUT[6] undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_3 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal sw1_counter33_cry_7_0_COUT undriven or does not drive anything - clipped.
+     
+Signal stim_comp_err_c[0] undriven or does not drive anything - clipped.
+Signal stim_comp_err[0] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[1] undriven or does not drive anything - clipped.
+Signal stim_comp_err[1] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[2] undriven or does not drive anything - clipped.
+Signal stim_comp_err[2] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[3] undriven or does not drive anything - clipped.
+Signal stim_comp_err[3] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[4] undriven or does not drive anything - clipped.
+Signal stim_comp_err[4] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[5] undriven or does not drive anything - clipped.
+Signal stim_comp_err[5] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[6] undriven or does not drive anything - clipped.
+Signal stim_comp_err[6] undriven or does not drive anything - clipped.
+Signal stim_comp_err_c[7] undriven or does not drive anything - clipped.
+Signal stim_comp_err[7] undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_rate_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+
+Signal u_cg_fsm/N_1 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_rate_cnt_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_rate_cnt_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_2 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_interval_cnt_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_interval_cnt_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_duration_cnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_3 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_duration_cnt_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_duration_cnt_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/N_4 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_1_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_1_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_3_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_3_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_5_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_7_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/r_duration_cnt15_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_1_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_1_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/N_5 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_9_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_21_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_interval_tmout_0_I_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_1_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_1_0_S0 undriven or does not drive anything
+
+     - clipped.
+Signal u_cg_fsm/N_6 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_9_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_21_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u_cg_fsm/w_duration_tmout_0_I_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/N_7 undriven or does not drive anything - clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_21_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u_cg_fsm/w_rate_tmout_0_I_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u_div64_clk/div64_count_cry_0_S0_0[0] undriven or does not drive anything
+     - clipped.
+Signal u_div64_clk/N_1 undriven or does not drive anything - clipped.
+Signal u_div64_clk/div64_count_cry_0_COUT_0[3] undriven or does not drive
+     anything - clipped.
+Signal u_div64x64_clk/div64_count_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal u_div64x64_clk/N_1 undriven or does not drive anything - clipped.
+Signal u_div64x64_clk/div64_count_cry_0_COUT[3] undriven or does not drive
+     anything - clipped.
+Signal sw2_counter_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal sw2_counter_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block i_rst_n_pad_RNI2JI2 was optimized away.
+Block pb_p_test_0\000/BUF0/BUF0 was optimized away.
+Block r_async_ack_mode_transition[1]\000/BUF0/BUF0 was optimized away.
+Block r_async_ack_mode_transition[0]\000/BUF0/BUF0 was optimized away.
+Block r_ack_mode_transition\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[7]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[6]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[5]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[4]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[3]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[2]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[0]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[7]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[6]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[5]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[4]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[3]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[2]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[1]\000/BUF0/BUF0 was optimized away.
+Block c_channel_1[0]\000/BUF0/BUF0 was optimized away.
+
+Block sw1_counter[7]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[6]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[5]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[4]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[3]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[2]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[1]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[0]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[7]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[6]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[5]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[4]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[3]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[2]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[1]\000/BUF0/BUF0 was optimized away.
+Block sw1_counter[0]\000/BUF0/BUF0 was optimized away.
+Block w_db_sw1_pb\000/BUF0/BUF0 was optimized away.
+Block r_db_sw2_pb_d[0]\000/BUF0/BUF0 was optimized away.
+Block w_db_sw2_pb\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[7]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[6]\000/BUF0/BUF0 was optimized away.
+Block c_duration[5]\000/BUF0/BUF0 was optimized away.
+Block c_duration[4]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[3]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[2]\000/BUF0/BUF0 was optimized away.
+Block c_duration[1]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[0]\000/BUF0/BUF0 was optimized away.
+Block sw2_counter[2]\000/BUF0/BUF0 was optimized away.
+Block sw2_counter[1]\000/BUF0/BUF0 was optimized away.
+Block sw2_counter[0]\000/BUF0/BUF0 was optimized away.
+Block c_rate[7]\000/BUF0/BUF0 was optimized away.
+Block c_rate[6]\000/BUF0/BUF0 was optimized away.
+Block c_duration[5]\000/BUF0/BUF0 was optimized away.
+Block c_duration[4]\000/BUF0/BUF0 was optimized away.
+Block c_rate[3]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[2]\000/BUF0/BUF0 was optimized away.
+Block c_duration[1]\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[0]\000/BUF0/BUF0 was optimized away.
+Block un1_r_mode_NE\000/BUF0/BUF0 was optimized away.
+Block u_trigger_en/w_trigger_en\000/BUF0/BUF0 was optimized away.
+Block u_trigger_en/u_trigger_en.r_slave_en[1]\000/BUF0/BUF0 was optimized away.
+Block u_trigger_en/u_trigger_en/r_slave_en[0]\000/BUF0/BUF0 was optimized away.
+Block u_trigger_en/u_trigger_en/r_master_en\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/w_sync_anode_phase_en\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/w_sync_cathod_phase_en\000/BUF0/BUF0 was optimized away.
+     
+Block u_cg_fsm/r_channel_0[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_0[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[6]\000/BUF0/BUF0 was optimized away.
+
+Block u_cg_fsm/r_channel_1[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_channel_1[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_0[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_dac_amp_1[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_master_en_2_1\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_duration[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_interval_cnt_s[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/c_next_state_0_sqmuxa\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/N_548_0\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[7]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[6]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/r_rate[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[7]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[6]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[5]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[4]\000/BUF0/BUF0 was
+
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[3]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[2]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/r_search_disabled_channel_4[1]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_cg_fsm/un1_i_trigger\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/w_sync_trigger_en\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_state_ns[4]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_state_ns[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_state_ns[2]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/N_56_i\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_state_ns[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm.c_stim_comp_en_n\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_sync_anode_phase[1]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_sync_anode_phase[0]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/w_debug_fsm_led[3]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_cg_fsm/r_sync_cathod_phase[1]\000/BUF0/BUF0 was optimized away.
+     
+Block u_cg_fsm/u_cg_fsm/r_sync_cathod_phase[0]\000/BUF0/BUF0 was optimized away.
+     
+Block u_cg_fsm/u_cg_fsm/w_debug_fsm_led[5]\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_sync_trigger/w_sync_trigger_en\000/BUF0/BUF0 was optimized
+     away.
+Block u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/u_cg_fsm.w_search_disa
+     bled_channel_phase_end_p\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_sync_cathod_phase_en/u_cg_fsm.c_cathod_phase_en_0_sqmuxa\000/BU
+     F0/BUF0 was optimized away.
+Block u_cg_fsm/u_sync_anode_phase_en/u_cg_fsm/u_sync_anode_phase_en/c_next_state
+     _1_sqmuxa\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_sync_fsm_trigger/u_cg_fsm/r_slave_en_2[1]\000/BUF0/BUF0 was
+     optimized away.
+Block u_cg_fsm/u_sync_fsm_trigger/u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0]\000/
+     BUF0/BUF0 was optimized away.
+Block u_cg_fsm/u_sync_fsm_trigger/u_cg_fsm/u_sync_fsm_trigger/r_master_en\000/BU
+     F0/BUF0 was optimized away.
+Block u_div4_clk/u_div4_clk/div4_count_i\000/BUF0/BUF0 was optimized away.
+Block u_div4_clk/u_div4_clk/r_gen_clk_0\000/BUF0/BUF0 was optimized away.
+Block u_div64_clk/u_div64_clk/div64_count_s[4]\000/BUF0/BUF0 was optimized away.
+     
+Block u_div64_clk/u_div64_clk/div64_count_s[3]\000/BUF0/BUF0 was optimized away.
+     
+Block u_div64_clk/u_div64_clk/div64_count_s[2]\000/BUF0/BUF0 was optimized away.
+     
+Block u_div64_clk/u_div64_clk/div64_count_s[1]\000/BUF0/BUF0 was optimized away.
+     
+Block u_div64_clk/u_div64_clk/div64_count_s[0]\000/BUF0/BUF0 was optimized away.
+     
+Block u_div64_clk/u_div64_clk/r_gen_clk_0_0\000/BUF0/BUF0 was optimized away.
+Block c_channel_0[1]\000/BUF0/BUF0 was optimized away.
+Block r_db_sw1_pb_d[0]\000/BUF0/BUF0 was optimized away.
+Block mode_disp_en_RNO\000/BUF0/BUF0 was optimized away.
+Block u_cg_fsm/GND was optimized away.
+Block u_div64_clk/GND was optimized away.
+Block u_div64x64_clk/GND was optimized away.
+
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'i_rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 36 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,581 @@
+[ START MERGED ]
+i_rst_n_c_i i_rst_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+u_cg_fsm.c_stim_an[6]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[5]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[4]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[3]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[2]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[1]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[0]\000/BUF0\000/BUF0
+u_cg_fsm.r_channel_0[2]\000/BUF0\000/BUF0
+u_cg_fsm.r_channel_0[1]\000/BUF0\000/BUF0
+u_cg_fsm.r_channel_0[0]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[7]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[6]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[5]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[4]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[3]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[2]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[1]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_ca[0]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_comp_en_n\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[7]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[6]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[5]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[4]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[3]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[2]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[1]\000/BUF0\000/BUF0
+u_cg_fsm.r_dac_amp_0[0]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[7]\000/BUF0\000/BUF0
+u_cg_fsm.c_stim_an[6]\000/BUF0
+u_cg_fsm.c_stim_an[5]\000/BUF0
+u_cg_fsm.c_stim_an[4]\000/BUF0
+u_cg_fsm.c_stim_an[3]\000/BUF0
+u_cg_fsm.c_stim_an[2]\000/BUF0
+u_cg_fsm.c_stim_an[1]\000/BUF0
+u_cg_fsm.c_stim_an[0]\000/BUF0
+u_cg_fsm.r_channel_0[2]\000/BUF0
+u_cg_fsm.r_channel_0[1]\000/BUF0
+u_cg_fsm.r_channel_0[0]\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[2]\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[1]\000/BUF0
+u_cg_fsm.r_stim_bcg1_sel_2[0]\000/BUF0
+u_cg_fsm.c_stim_ca[7]\000/BUF0
+u_cg_fsm.c_stim_ca[6]\000/BUF0
+u_cg_fsm.c_stim_ca[5]\000/BUF0
+u_cg_fsm.c_stim_ca[4]\000/BUF0
+u_cg_fsm.c_stim_ca[3]\000/BUF0
+u_cg_fsm.c_stim_ca[2]\000/BUF0
+u_cg_fsm.c_stim_ca[1]\000/BUF0
+u_cg_fsm.c_stim_ca[0]\000/BUF0
+u_cg_fsm.c_stim_comp_en_n\000/BUF0
+u_cg_fsm.r_dac_amp_0[7]\000/BUF0
+u_cg_fsm.r_dac_amp_0[6]\000/BUF0
+u_cg_fsm.r_dac_amp_0[5]\000/BUF0
+u_cg_fsm.r_dac_amp_0[4]\000/BUF0
+u_cg_fsm.r_dac_amp_0[3]\000/BUF0
+u_cg_fsm.r_dac_amp_0[2]\000/BUF0
+u_cg_fsm.r_dac_amp_0[1]\000/BUF0
+u_cg_fsm.r_dac_amp_0[0]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[7]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[6]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[5]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[4]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[3]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[2]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[1]\000/BUF0
+u_cg_fsm.r_stim_dac1_val_2[0]\000/BUF0
+u_cg_fsm.c_stim_an[7]\000/BUF0
+sw1_pb
+sw2_pb
+polarity[0]
+polarity[1]
+r_async_ack_mode_transition[0]
+sw2_pb_c
+pb_p_test_0
+r_db_sw2_pb_d[0]
+r_db_sw2_pb_d[1]
+u_trigger_en/r_slave_en[0]
+u_cg_fsm/r_interval_cnt_cry[0]
+u_cg_fsm/r_interval_cnt_cry[2]
+u_cg_fsm/r_interval_cnt_cry[4]
+u_cg_fsm/r_interval_cnt_cry[6]
+u_cg_fsm.r_stim_dac1_val_2[7]
+u_cg_fsm.r_stim_dac1_val_2[6]
+u_cg_fsm.r_stim_dac1_val_2[5]
+u_cg_fsm.r_stim_dac1_val_2[4]
+u_cg_fsm.r_stim_dac1_val_2[3]
+u_cg_fsm.r_stim_dac1_val_2[2]
+u_cg_fsm.r_stim_dac1_val_2[1]
+u_cg_fsm.r_stim_dac1_val_2[0]
+u_cg_fsm/r_interval_cnt
+polarity_c[1]
+polarity_c[0]
+c_channel_0[5]
+c_duration[5]
+c_channel_1[0]
+c_duration[1]
+c_rate[3]
+c_channel_0[0]
+c_channel_0[2]
+c_channel_0[3]
+c_channel_0[6]
+c_rate[6]
+u_cg_fsm/c_disabled_dac_sel_0_a3_1[1]
+u_cg_fsm/N_83
+u_cg_fsm/c_disabled_dac_sel_0_a3_2[2]
+u_cg_fsm/N_85
+u_cg_fsm.r_stim_bcg1_sel_2[0]
+u_cg_fsm/N_64
+u_cg_fsm.r_stim_bcg1_sel_2[1]
+u_cg_fsm/N_69
+u_cg_fsm/N_65
+u_cg_fsm.c_stim_an[0]
+u_cg_fsm.r_stim_bcg1_sel_2[2]
+u_cg_fsm/c_set_mode_monopolar9
+u_cg_fsm/N_72
+u_cg_fsm.c_stim_ca[0]
+u_cg_fsm/N_67_0
+u_cg_fsm.c_stim_ca[1]
+u_cg_fsm.c_stim_an[1]
+u_cg_fsm.c_stim_an[3]
+u_cg_fsm.c_stim_an[4]
+u_cg_fsm.c_stim_an[6]
+u_cg_fsm.c_stim_ca[7]
+u_cg_fsm.c_stim_ca[4]
+u_cg_fsm.c_stim_ca[6]
+u_cg_fsm.c_stim_ca[3]
+u_cg_fsm.r_dac_amp_0[7]
+u_cg_fsm.r_dac_amp_0[6]
+u_cg_fsm.r_dac_amp_0[5]
+u_cg_fsm.r_dac_amp_0[4]
+u_cg_fsm.r_dac_amp_0[3]
+u_cg_fsm.r_dac_amp_0[2]
+u_cg_fsm.r_dac_amp_0[1]
+u_cg_fsm.r_dac_amp_0[0]
+u_cg_fsm/r_dac_amp_1_0[7]
+u_cg_fsm/r_dac_amp_1_0[6]
+u_cg_fsm/r_dac_amp_1_0[5]
+u_cg_fsm/r_dac_amp_1_0[4]
+u_cg_fsm/r_dac_amp_1_0[3]
+u_cg_fsm/r_dac_amp_1_0[2]
+u_cg_fsm/r_dac_amp_1_0[1]
+u_cg_fsm/r_dac_amp_1_0[0]
+u_cg_fsm/r_interval_cnt_s[7]
+u_cg_fsm/r_interval_cnt_s[6]
+u_cg_fsm/r_interval_cnt_s[5]
+u_cg_fsm/r_interval_cnt_s[4]
+u_cg_fsm/r_interval_cnt_s[3]
+u_cg_fsm/r_interval_cnt_s[2]
+u_cg_fsm/r_interval_cnt_s[1]
+u_cg_fsm/r_interval_cnt_s[0]
+u_cg_fsm/r_state_ns[3]
+u_cg_fsm/r_state_ns[2]
+u_cg_fsm/N_56_i
+u_cg_fsm/r_state[0]
+u_cg_fsm/r_state_ns[0]
+u_cg_fsm/r_stim_comp_en_n
+u_cg_fsm.c_stim_comp_en_n
+u_cg_fsm/r_sync_anode_phase[2]
+u_cg_fsm/r_sync_anode_phase[1]
+u_cg_fsm/r_sync_anode_phase[0]
+u_cg_fsm/r_sync_cathod_phase[0]
+u_cg_fsm/N_548_0
+u_cg_fsm.c_stim_an[2]
+u_cg_fsm.c_stim_ca[2]
+u_cg_fsm.c_stim_ca[5]
+u_cg_fsm/c_stim_ca_1_sqmuxa_1
+u_cg_fsm.c_stim_an[5]
+u_cg_fsm/N_32
+u_cg_fsm/c_set_mode_monopolar8
+u_cg_fsm/r_state_ns[4]
+u_cg_fsm/N_67
+u_cg_fsm/r_search_disabled_channel_4[7]
+u_cg_fsm/r_search_disabled_channel_4[1]
+u_cg_fsm/r_search_disabled_channel_4[2]
+u_cg_fsm/r_search_disabled_channel_4[3]
+u_cg_fsm/r_search_disabled_channel_4[4]
+u_cg_fsm/r_search_disabled_channel_4[5]
+u_cg_fsm/r_search_disabled_channel_4[6]
+u_cg_fsm/N_74
+u_cg_fsm/N_86
+u_cg_fsm/un1_i_trigger
+w_sync_trigger_en
+c_channel_0[4]
+c_channel_0[7]
+c_rate[7]
+c_duration[4]
+u_cg_fsm/w_sync_anode_phase_en
+u_cg_fsm/u_sync_anode_phase_en/c_next_state_1_sqmuxa
+u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0]
+w_db_sw1_pb
+u_debounce_sw1/r_pb_in[2]
+u_debounce_sw1/r_pb_in[1]
+w_db_sw2_pb
+u_debounce_sw2/r_pb_in[2]
+u_debounce_sw2/r_pb_in[1]
+u_debounce_sw2.r_pb_in[0]
+u_div4_clk/div4_count_i
+u_div4_clk/r_gen_clk_0
+u_div4_clk/div4_count
+u_div64_clk/div64_count_cry[0]
+u_div64_clk/div64_count_cry[2]
+u_div64_clk/div64_count15_1
+u_div64_clk/div64_count[4]
+u_div64_clk/div64_count_s[4]
+u_div64_clk/div64_count[3]
+u_div64_clk/div64_count_s[3]
+u_div64_clk/div64_count[2]
+u_div64_clk/div64_count_s[2]
+u_div64_clk/div64_count[1]
+u_div64_clk/div64_count_s[1]
+u_div64_clk/div64_count[0]
+u_div64_clk/div64_count_s[0]
+u_div64_clk/r_gen_clk_0_0
+u_div64_clk/div64_count15
+u_div64x64_clk/div64_count_cry[0]
+u_div64x64_clk/div64_count_cry[2]
+u_div64x64_clk/div64_count15_1
+u_div64x64_clk/div64_count[4]
+u_div64x64_clk/div64_count_s[4]
+u_div64x64_clk/div64_count[3]
+u_div64x64_clk/div64_count_s[3]
+u_div64x64_clk/div64_count[2]
+u_div64x64_clk/div64_count_s[2]
+u_div64x64_clk/div64_count[1]
+u_div64x64_clk/div64_count_s[1]
+u_div64x64_clk/div64_count[0]
+u_div64x64_clk/div64_count_s[0]
+w_div64_clk_0
+u_div64x64_clk/r_gen_clk_0_1
+u_div64x64_clk/div64_count15
+u_div2_clk/div2_count_i
+w_div64x64_clk_0
+u_div2_clk/r_gen_clk_0_2
+u_div2_clk/div2_count
+u_debounce_sw1.r_pb_in[0]
+w_db_clk
+sw1_pb_c
+c_channel_0[1]
+u_cg_fsm.c_stim_an[7]
+mode_disp_en_RNO
+pb_p_test_0\000/BUF0
+r_async_ack_mode_transition[1]\000/BUF0
+r_async_ack_mode_transition[0]\000/BUF0
+r_ack_mode_transition\000/BUF0
+c_channel_0[7]\000/BUF0
+c_channel_0[6]\000/BUF0
+c_channel_0[5]\000/BUF0
+c_channel_0[4]\000/BUF0
+c_channel_0[3]\000/BUF0
+c_channel_0[2]\000/BUF0
+c_channel_0[0]\000/BUF0
+c_channel_0[7]\000/BUF0
+c_channel_0[6]\000/BUF0
+c_channel_0[5]\000/BUF0
+c_channel_0[4]\000/BUF0
+c_channel_0[3]\000/BUF0
+c_channel_0[2]\000/BUF0
+c_channel_0[1]\000/BUF0
+c_channel_1[0]\000/BUF0
+sw1_counter[7]\000/BUF0
+sw1_counter[6]\000/BUF0
+sw1_counter[5]\000/BUF0
+sw1_counter[4]\000/BUF0
+sw1_counter[3]\000/BUF0
+sw1_counter[2]\000/BUF0
+sw1_counter[1]\000/BUF0
+sw1_counter[0]\000/BUF0
+sw1_counter[7]\000/BUF0
+sw1_counter[6]\000/BUF0
+sw1_counter[5]\000/BUF0
+sw1_counter[4]\000/BUF0
+sw1_counter[3]\000/BUF0
+sw1_counter[2]\000/BUF0
+sw1_counter[1]\000/BUF0
+sw1_counter[0]\000/BUF0
+w_db_sw1_pb\000/BUF0
+r_db_sw2_pb_d[0]\000/BUF0
+w_db_sw2_pb\000/BUF0
+c_channel_0[7]\000/BUF0
+c_channel_0[6]\000/BUF0
+c_duration[5]\000/BUF0
+c_duration[4]\000/BUF0
+c_channel_0[3]\000/BUF0
+c_channel_0[2]\000/BUF0
+c_duration[1]\000/BUF0
+c_channel_0[0]\000/BUF0
+sw2_counter[2]\000/BUF0
+sw2_counter[1]\000/BUF0
+sw2_counter[0]\000/BUF0
+c_rate[7]\000/BUF0
+c_rate[6]\000/BUF0
+c_duration[5]\000/BUF0
+c_duration[4]\000/BUF0
+c_rate[3]\000/BUF0
+c_channel_0[2]\000/BUF0
+c_duration[1]\000/BUF0
+c_channel_0[0]\000/BUF0
+un1_r_mode_NE\000/BUF0
+w_trigger_en\000/BUF0
+u_trigger_en.r_slave_en[1]\000/BUF0
+u_trigger_en/r_slave_en[0]\000/BUF0
+u_trigger_en/r_master_en\000/BUF0
+u_cg_fsm/w_sync_anode_phase_en\000/BUF0
+u_cg_fsm/w_sync_cathod_phase_en\000/BUF0
+r_channel_0[7]\000/BUF0
+r_channel_0[6]\000/BUF0
+r_channel_0[5]\000/BUF0
+r_channel_0[4]\000/BUF0
+r_channel_0[3]\000/BUF0
+r_channel_0[2]\000/BUF0
+r_channel_0[1]\000/BUF0
+r_channel_0[0]\000/BUF0
+r_channel_1[7]\000/BUF0
+r_channel_1[6]\000/BUF0
+r_channel_1[5]\000/BUF0
+r_channel_1[4]\000/BUF0
+r_channel_1[3]\000/BUF0
+r_channel_1[2]\000/BUF0
+r_channel_1[1]\000/BUF0
+r_channel_1[0]\000/BUF0
+r_dac_amp_0[7]\000/BUF0
+r_dac_amp_0[6]\000/BUF0
+r_dac_amp_0[5]\000/BUF0
+r_dac_amp_0[4]\000/BUF0
+r_dac_amp_0[3]\000/BUF0
+r_dac_amp_0[2]\000/BUF0
+r_dac_amp_0[1]\000/BUF0
+r_dac_amp_0[0]\000/BUF0
+r_dac_amp_1[7]\000/BUF0
+r_dac_amp_1[6]\000/BUF0
+r_dac_amp_1[5]\000/BUF0
+r_dac_amp_1[4]\000/BUF0
+r_dac_amp_1[3]\000/BUF0
+r_dac_amp_1[2]\000/BUF0
+r_dac_amp_1[1]\000/BUF0
+r_dac_amp_1[0]\000/BUF0
+u_cg_fsm/r_master_en_2_1\000/BUF0
+r_duration[7]\000/BUF0
+r_duration[6]\000/BUF0
+r_duration[5]\000/BUF0
+r_duration[4]\000/BUF0
+r_duration[3]\000/BUF0
+r_duration[2]\000/BUF0
+r_duration[1]\000/BUF0
+r_duration[0]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[7]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[6]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[5]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[4]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[3]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[2]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[1]\000/BUF0
+u_cg_fsm/r_interval_cnt_s[0]\000/BUF0
+u_cg_fsm/c_next_state_0_sqmuxa\000/BUF0
+u_cg_fsm/N_548_0\000/BUF0
+r_rate[7]\000/BUF0
+r_rate[6]\000/BUF0
+r_rate[5]\000/BUF0
+r_rate[4]\000/BUF0
+r_rate[3]\000/BUF0
+r_rate[2]\000/BUF0
+r_rate[1]\000/BUF0
+r_rate[0]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[7]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[6]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[5]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[4]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[3]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[2]\000/BUF0
+u_cg_fsm/r_search_disabled_channel_4[1]\000/BUF0
+u_cg_fsm/un1_i_trigger\000/BUF0
+w_sync_trigger_en\000/BUF0
+u_cg_fsm/r_state_ns[4]\000/BUF0
+u_cg_fsm/r_state_ns[3]\000/BUF0
+u_cg_fsm/r_state_ns[2]\000/BUF0
+u_cg_fsm/N_56_i\000/BUF0
+u_cg_fsm/r_state_ns[0]\000/BUF0
+u_cg_fsm.c_stim_comp_en_n\000/BUF0
+u_cg_fsm/r_sync_anode_phase[1]\000/BUF0
+u_cg_fsm/r_sync_anode_phase[0]\000/BUF0
+u_cg_fsm/w_debug_fsm_led[3]\000/BUF0
+u_cg_fsm/r_sync_cathod_phase[1]\000/BUF0
+u_cg_fsm/r_sync_cathod_phase[0]\000/BUF0
+u_cg_fsm/w_debug_fsm_led[5]\000/BUF0
+w_sync_trigger_en\000/BUF0
+u_cg_fsm.w_search_disabled_channel_phase_end_p\000/BUF0
+u_cg_fsm.c_cathod_phase_en_0_sqmuxa\000/BUF0
+u_cg_fsm/u_sync_anode_phase_en/c_next_state_1_sqmuxa\000/BUF0
+u_cg_fsm/r_slave_en_2[1]\000/BUF0
+u_cg_fsm/u_sync_fsm_trigger/r_slave_en[0]\000/BUF0
+u_cg_fsm/u_sync_fsm_trigger/r_master_en\000/BUF0
+u_div4_clk/div4_count_i\000/BUF0
+u_div4_clk/r_gen_clk_0\000/BUF0
+u_div64_clk/div64_count_s[4]\000/BUF0
+u_div64_clk/div64_count_s[3]\000/BUF0
+u_div64_clk/div64_count_s[2]\000/BUF0
+u_div64_clk/div64_count_s[1]\000/BUF0
+u_div64_clk/div64_count_s[0]\000/BUF0
+u_div64_clk/r_gen_clk_0_0\000/BUF0
+c_channel_0[1]\000/BUF0
+r_db_sw1_pb_d[0]\000/BUF0
+mode_disp_en_RNO\000/BUF0
+u_cg_fsm/GND
+u_div64_clk/GND
+u_div64x64_clk/GND
+sw2_counter_cry_0_COUT[6]
+sw1_counter_lcry_0_S1
+sw1_counter_lcry_0_S0
+N_2
+sw1_counter_cry_0_COUT[6]
+sw1_counter33_cry_0_0_S1
+sw1_counter33_cry_0_0_S0
+N_3
+sw1_counter33_cry_1_0_S1
+sw1_counter33_cry_1_0_S0
+sw1_counter33_cry_3_0_S1
+sw1_counter33_cry_3_0_S0
+sw1_counter33_cry_5_0_S1
+sw1_counter33_cry_5_0_S0
+sw1_counter33_cry_7_0_S0
+sw1_counter33_cry_7_0_COUT
+stim_comp_err_c[0]
+stim_comp_err[0]
+stim_comp_err_c[1]
+stim_comp_err[1]
+stim_comp_err_c[2]
+stim_comp_err[2]
+stim_comp_err_c[3]
+stim_comp_err[3]
+stim_comp_err_c[4]
+stim_comp_err[4]
+stim_comp_err_c[5]
+stim_comp_err[5]
+stim_comp_err_c[6]
+stim_comp_err[6]
+stim_comp_err_c[7]
+stim_comp_err[7]
+u_cg_fsm/r_rate_cnt_cry_0_S0[0]
+u_cg_fsm/N_1
+u_cg_fsm/r_rate_cnt_s_0_S1[7]
+u_cg_fsm/r_rate_cnt_s_0_COUT[7]
+u_cg_fsm/r_interval_cnt_cry_0_S0[0]
+u_cg_fsm/N_2
+u_cg_fsm/r_interval_cnt_s_0_S1[7]
+u_cg_fsm/r_interval_cnt_s_0_COUT[7]
+u_cg_fsm/r_duration_cnt_cry_0_S0[0]
+u_cg_fsm/N_3
+u_cg_fsm/r_duration_cnt_s_0_S1[7]
+u_cg_fsm/r_duration_cnt_s_0_COUT[7]
+u_cg_fsm/r_duration_cnt15_cry_0_0_S1
+u_cg_fsm/r_duration_cnt15_cry_0_0_S0
+u_cg_fsm/N_4
+u_cg_fsm/r_duration_cnt15_cry_1_0_S1
+u_cg_fsm/r_duration_cnt15_cry_1_0_S0
+u_cg_fsm/r_duration_cnt15_cry_3_0_S1
+u_cg_fsm/r_duration_cnt15_cry_3_0_S0
+u_cg_fsm/r_duration_cnt15_cry_5_0_S1
+u_cg_fsm/r_duration_cnt15_cry_5_0_S0
+u_cg_fsm/r_duration_cnt15_cry_7_0_S0
+u_cg_fsm/r_duration_cnt15_cry_7_0_COUT
+u_cg_fsm/w_interval_tmout_0_I_1_0_S1
+u_cg_fsm/w_interval_tmout_0_I_1_0_S0
+u_cg_fsm/N_5
+u_cg_fsm/w_interval_tmout_0_I_9_0_S1
+u_cg_fsm/w_interval_tmout_0_I_9_0_S0
+u_cg_fsm/w_interval_tmout_0_I_21_0_S0
+u_cg_fsm/w_interval_tmout_0_I_21_0_COUT
+u_cg_fsm/w_duration_tmout_0_I_1_0_S1
+u_cg_fsm/w_duration_tmout_0_I_1_0_S0
+u_cg_fsm/N_6
+u_cg_fsm/w_duration_tmout_0_I_9_0_S1
+u_cg_fsm/w_duration_tmout_0_I_9_0_S0
+u_cg_fsm/w_duration_tmout_0_I_21_0_S0
+u_cg_fsm/w_duration_tmout_0_I_21_0_COUT
+u_cg_fsm/w_rate_tmout_0_I_1_0_S1
+u_cg_fsm/w_rate_tmout_0_I_1_0_S0
+u_cg_fsm/N_7
+u_cg_fsm/w_rate_tmout_0_I_9_0_S1
+u_cg_fsm/w_rate_tmout_0_I_9_0_S0
+u_cg_fsm/w_rate_tmout_0_I_21_0_S0
+u_cg_fsm/w_rate_tmout_0_I_21_0_COUT
+u_div64_clk/div64_count_cry_0_S0_0[0]
+u_div64_clk/N_1
+u_div64_clk/div64_count_cry_0_COUT_0[3]
+u_div64x64_clk/div64_count_cry_0_S0[0]
+u_div64x64_clk/N_1
+u_div64x64_clk/div64_count_cry_0_COUT[3]
+sw2_counter_lcry_0_S1
+sw2_counter_lcry_0_S0
+N_1
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.1.454 -- WARNING: Map write only section -- Thu Nov 03 19:05:27 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "led_out[0]" SITE "T11" ;
+LOCATE COMP "i_rst_n" SITE "A10" ;
+LOCATE COMP "stim_bcg1_sel[2]" SITE "N13" ;
+LOCATE COMP "stim_bcg1_sel[1]" SITE "L16" ;
+LOCATE COMP "stim_bcg1_sel[0]" SITE "L14" ;
+LOCATE COMP "stim_bcg0_sel[2]" SITE "N14" ;
+LOCATE COMP "stim_bcg0_sel[1]" SITE "M16" ;
+LOCATE COMP "stim_bcg0_sel[0]" SITE "L15" ;
+LOCATE COMP "stim_dac1_val[7]" SITE "L13" ;
+LOCATE COMP "stim_dac1_val[6]" SITE "K16" ;
+LOCATE COMP "stim_dac1_val[5]" SITE "K14" ;
+LOCATE COMP "stim_dac1_val[4]" SITE "K11" ;
+LOCATE COMP "stim_dac1_val[3]" SITE "J15" ;
+LOCATE COMP "stim_dac1_val[2]" SITE "J13" ;
+LOCATE COMP "stim_dac1_val[1]" SITE "J11" ;
+LOCATE COMP "stim_dac1_val[0]" SITE "H15" ;
+LOCATE COMP "stim_dac0_val[7]" SITE "L12" ;
+LOCATE COMP "stim_dac0_val[6]" SITE "K15" ;
+LOCATE COMP "stim_dac0_val[5]" SITE "K13" ;
+LOCATE COMP "stim_dac0_val[4]" SITE "J16" ;
+LOCATE COMP "stim_dac0_val[3]" SITE "J14" ;
+LOCATE COMP "stim_dac0_val[2]" SITE "J12" ;
+LOCATE COMP "stim_dac0_val[1]" SITE "H16" ;
+LOCATE COMP "stim_dac0_val[0]" SITE "H13" ;
+LOCATE COMP "stim_ca[7]" SITE "E16" ;
+LOCATE COMP "stim_ca[6]" SITE "E11" ;
+LOCATE COMP "stim_ca[5]" SITE "D15" ;
+LOCATE COMP "stim_ca[4]" SITE "D13" ;
+LOCATE COMP "stim_ca[3]" SITE "C15" ;
+LOCATE COMP "stim_ca[2]" SITE "C13" ;
+LOCATE COMP "stim_ca[1]" SITE "B15" ;
+LOCATE COMP "stim_ca[0]" SITE "A15" ;
+LOCATE COMP "stim_an[7]" SITE "E13" ;
+LOCATE COMP "stim_an[6]" SITE "D16" ;
+LOCATE COMP "stim_an[5]" SITE "D14" ;
+LOCATE COMP "stim_an[4]" SITE "C16" ;
+LOCATE COMP "stim_an[3]" SITE "C14" ;
+LOCATE COMP "stim_an[2]" SITE "B16" ;
+LOCATE COMP "stim_an[1]" SITE "B14" ;
+LOCATE COMP "stim_an[0]" SITE "A14" ;
+LOCATE COMP "stim_comp_en_n" SITE "N16" ;
+LOCATE COMP "data_out" SITE "L4" ;
+LOCATE COMP "clk_out" SITE "L5" ;
+LOCATE COMP "lv_oe_n" SITE "M4" ;
+LOCATE COMP "lv_dir" SITE "M1" ;
+LOCATE COMP "led_out[15]" SITE "D7" ;
+LOCATE COMP "led_out[14]" SITE "E5" ;
+LOCATE COMP "led_out[13]" SITE "E6" ;
+LOCATE COMP "led_out[12]" SITE "E8" ;
+LOCATE COMP "led_out[11]" SITE "F4" ;
+LOCATE COMP "led_out[10]" SITE "H6" ;
+LOCATE COMP "led_out[9]" SITE "J5" ;
+LOCATE COMP "led_out[8]" SITE "J6" ;
+LOCATE COMP "led_out[7]" SITE "R10" ;
+LOCATE COMP "led_out[6]" SITE "R11" ;
+LOCATE COMP "led_out[5]" SITE "R13" ;
+LOCATE COMP "led_out[4]" SITE "R14" ;
+LOCATE COMP "led_out[3]" SITE "R15" ;
+LOCATE COMP "led_out[2]" SITE "R16" ;
+LOCATE COMP "led_out[1]" SITE "T10" ;
+LOCATE COMP "polarity[2]" SITE "D3" ;
+LOCATE COMP "sw2_b" SITE "P15" ;
+LOCATE COMP "sw2_a" SITE "P14" ;
+LOCATE COMP "sw1_b" SITE "P11" ;
+LOCATE COMP "sw1_a" SITE "P10" ;
+FREQUENCY NET "sw1_az" 0.100000 MHz ;
+FREQUENCY NET "sw2_az" 0.100000 MHz ;
+FREQUENCY NET "w_div4_clk" 16.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]
