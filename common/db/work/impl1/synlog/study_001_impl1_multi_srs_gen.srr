@@ -16,13 +16,15 @@ Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
 
 @N|Running in 64-bit mode
-File C:\Users\eidos\Desktop\common\db\work\impl1\synwork\study_001_impl1_comp.srs changed - recompiling
+Options changed - recompiling
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov  3 19:05:14 2022
+# Fri Nov  4 15:30:06 2022
 
 ###########################################################]

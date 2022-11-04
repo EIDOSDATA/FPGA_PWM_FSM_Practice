@@ -2,8 +2,8 @@
 <!-- 
   Synopsys, Inc.
   Version R-2021.03L-SP1
-  Project file C:\Users\eidos\Desktop\common\db\work\impl1\syntmp\run_option.xml
-  Written on Thu Nov  3 19:05:10 2022
+  Project file C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\syntmp\run_option.xml
+  Written on Fri Nov  4 15:30:02 2022
 
 
 --> 
@@ -11,7 +11,7 @@
      <option name="project_name" display_name="Project Name">proj_1</option>
      <option name="device_name" display_name="Device Name">impl1: Lattice MachXO2 : LCMXO2_2000ZE</option>
      <option name="impl_name" display_name="Implementation Name">impl1</option>
-     <option name="top_module" display_name="Top Module">ci_stim_fpga_wrapper</option>
+     <option name="top_module" display_name="Top Module"></option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>

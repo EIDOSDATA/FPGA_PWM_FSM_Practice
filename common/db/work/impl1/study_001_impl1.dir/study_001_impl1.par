@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 03 19:05:29 2022
+Fri Nov 04 15:30:19 2022
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f study_001_impl1.p2t
 study_001_impl1_map.ncd study_001_impl1.dir study_001_impl1.prf -gui -msgset
-C:/Users/eidos/Desktop/common/db/work/promote.xml
+C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml
 
 
 Preference file: study_001_impl1.prf.
@@ -16,11 +16,11 @@ Preference file: study_001_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            42.096       0            0.686        0            12           Completed
+5_1   *      0            -734.304     26288384     -2.695       66970        09           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 12 secs 
+Total (real) run time for 1-seed: 9 secs 
 
 par done!
 

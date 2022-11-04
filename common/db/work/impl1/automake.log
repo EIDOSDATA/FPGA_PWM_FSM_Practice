@@ -10,7 +10,7 @@ Lattice Diamond Version 3.12.1.454
 #OS: Windows 8 6.2
 #Hostname: TODOC-ECHO-LAPT
 
-# Thu Nov  3 19:05:10 2022
+# Fri Nov  4 15:30:02 2022
 
 #Implementation: impl1
 
@@ -55,63 +55,65 @@ Synopsys Verilog Compiler, Version comp202103synp2, Build 093R, Built Aug 10 202
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\eidos\Desktop\common\db\design\ci_if_cdc.v" (library work)
-@I::"C:\Users\eidos\Desktop\common\db\design\debounce.v" (library work)
-@I::"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v" (library work)
-@I::"C:\Users\eidos\Desktop\common\db\design\fpga_clk_modules.v" (library work)
-@I::"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v" (library work)
+@I::"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\ci_if_cdc.v" (library work)
+@I::"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\debounce.v" (library work)
+@I::"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v" (library work)
+@I::"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\fpga_clk_modules.v" (library work)
+@I::"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v" (library work)
 Verilog syntax check successful!
-File C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v changed - recompiling
+Options changed - recompiling
 Selecting top level module ci_stim_fpga_wrapper
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo2.v":494:7:494:9|Synthesizing module GSR in library work.
 Running optimization stage 1 on GSR .......
-Finished optimization stage 1 on GSR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\ci_if_cdc.v":2:7:2:15|Synthesizing module ci_if_cdc in library work.
+Finished optimization stage 1 on GSR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+Running optimization stage 1 on OSCH .......
+Finished optimization stage 1 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\ci_if_cdc.v":2:7:2:15|Synthesizing module ci_if_cdc in library work.
 Running optimization stage 1 on ci_if_cdc .......
-Finished optimization stage 1 on ci_if_cdc (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":16:7:16:17|Synthesizing module stim_cg_fsm in library work.
+Finished optimization stage 1 on ci_if_cdc (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":16:7:16:17|Synthesizing module stim_cg_fsm in library work.
 Running optimization stage 1 on stim_cg_fsm .......
-@W: CL169 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":839:1:839:6|Pruning unused register r_cb_phase. Make sure that there are no unused intermediate registers.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning register bits 7 to 4 of r_interval_value[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning register bit 2 of r_interval_value[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1075:1:1075:6|Pruning unused register r_cb_phase. Make sure that there are no unused intermediate registers.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning register bits 7 to 4 of r_interval_value[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning register bit 2 of r_interval_value[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 Finished optimization stage 1 on stim_cg_fsm (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\debounce.v":1:7:1:14|Synthesizing module debounce in library work.
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\debounce.v":1:7:1:14|Synthesizing module debounce in library work.
 Running optimization stage 1 on debounce .......
 Finished optimization stage 1 on debounce (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\fpga_clk_modules.v":1:7:1:14|Synthesizing module div4_clk in library work.
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\fpga_clk_modules.v":1:7:1:14|Synthesizing module div4_clk in library work.
 Running optimization stage 1 on div4_clk .......
 Finished optimization stage 1 on div4_clk (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\fpga_clk_modules.v":36:7:36:15|Synthesizing module div64_clk in library work.
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\fpga_clk_modules.v":51:7:51:15|Synthesizing module div64_clk in library work.
 Running optimization stage 1 on div64_clk .......
 Finished optimization stage 1 on div64_clk (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\design\fpga_clk_modules.v":71:7:71:14|Synthesizing module div2_clk in library work.
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\fpga_clk_modules.v":99:7:99:14|Synthesizing module div2_clk in library work.
 Running optimization stage 1 on div2_clk .......
-Finished optimization stage 1 on div2_clk (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
-@N: CG364 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":12:7:12:26|Synthesizing module ci_stim_fpga_wrapper in library work.
-@W: CG360 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":120:6:120:10|Removing wire w_clk, as there is no assignment to it.
+Finished optimization stage 1 on div2_clk (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+@N: CG364 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Synthesizing module ci_stim_fpga_wrapper in library work.
 Running optimization stage 1 on ci_stim_fpga_wrapper .......
-@W: CL168 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":633:10:633:24|Removing instance u_div64x4x4_clk because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":627:10:627:22|Removing instance u_div64x4_clk because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL259 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":674:19:674:22|Duplicate LOC attributes found on net
-@W: CL259 :"C:\Users\eidos\Desktop\common\db\top\ci_stim_fpga.v":674:19:674:22|Duplicate LOC attributes found on net
-Finished optimization stage 1 on ci_stim_fpga_wrapper (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
+@W: CL168 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v":735:10:735:24|Removing instance u_div64x4x4_clk because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v":728:10:728:22|Removing instance u_div64x4_clk because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL259 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v":811:19:811:22|Duplicate LOC attributes found on net
+@W: CL259 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\top\ci_stim_fpga.v":811:19:811:22|Duplicate LOC attributes found on net
+Finished optimization stage 1 on ci_stim_fpga_wrapper (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
 Running optimization stage 2 on ci_stim_fpga_wrapper .......
-Finished optimization stage 2 on ci_stim_fpga_wrapper (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on ci_stim_fpga_wrapper (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 105MB)
 Running optimization stage 2 on div2_clk .......
-Finished optimization stage 2 on div2_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on div2_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 105MB)
 Running optimization stage 2 on div64_clk .......
-Finished optimization stage 2 on div64_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on div64_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 105MB)
 Running optimization stage 2 on div4_clk .......
-Finished optimization stage 2 on div4_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on div4_clk (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 105MB)
 Running optimization stage 2 on debounce .......
-Finished optimization stage 2 on debounce (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on debounce (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 105MB)
 Running optimization stage 2 on stim_cg_fsm .......
-@N: CL201 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":576:1:576:6|Trying to extract state machine for register r_state.
+@N: CL201 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":755:1:755:6|Trying to extract state machine for register r_state.
 Extracted state machine for register r_state
 State machine has 5 reachable states with original encodings of:
    000
@@ -119,31 +121,33 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_interval_value[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_cb_on_0 to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Optimizing register bit r_cb_on_1 to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning register bit 1 of r_interval_value[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL169 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning unused register r_interval_value[3]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning unused register r_cb_on_0. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\eidos\Desktop\common\db\design\stim_cg_fsm.v":781:1:781:6|Pruning unused register r_cb_on_1. Make sure that there are no unused intermediate registers.
-Finished optimization stage 2 on stim_cg_fsm (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 104MB)
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_interval_value[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_cb_on_0 to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Optimizing register bit r_cb_on_1 to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning register bit 1 of r_interval_value[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning unused register r_interval_value[3]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning unused register r_cb_on_0. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\design\stim_cg_fsm.v":1000:1:1000:6|Pruning unused register r_cb_on_1. Make sure that there are no unused intermediate registers.
+Finished optimization stage 2 on stim_cg_fsm (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 106MB)
 Running optimization stage 2 on ci_if_cdc .......
-Finished optimization stage 2 on ci_if_cdc (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on ci_if_cdc (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 106MB)
+Running optimization stage 2 on OSCH .......
+Finished optimization stage 2 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 106MB)
 Running optimization stage 2 on GSR .......
-Finished optimization stage 2 on GSR (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 104MB)
+Finished optimization stage 2 on GSR (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 106MB)
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
-@L: C:\Users\eidos\Desktop\common\db\work\impl1\synwork\layer0.rt.csv
+@L: C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 98MB peak: 104MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 106MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov  3 19:05:12 2022
+# Fri Nov  4 15:30:05 2022
 
 ###########################################################]
 ###########################################################[
@@ -164,60 +168,66 @@ Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
 
 @N|Running in 64-bit mode
-File C:\Users\eidos\Desktop\common\db\work\impl1\synwork\layer0.srs changed - recompiling
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Thu Nov  3 19:05:12 2022
-
-###########################################################]
-
-For a summary of runtime and memory usage for all design units, please see file:
-==========================================================
-@L: C:\Users\eidos\Desktop\common\db\work\impl1\synwork\study_001_impl1_comp.rt.csv
-
-@END
-
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
-
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Thu Nov  3 19:05:12 2022
-
-###########################################################]
-###########################################################[
-
-Copyright (C) 1994-2021 Synopsys, Inc.
-This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
-and may only be used pursuant to the terms and conditions of a written license agreement
-with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
-Synopsys software or the associated documentation is strictly prohibited.
-Tool: Synplify Pro (R)
-Build: R-2021.03L-SP1
-Install: C:\lscc\diamond\3.12\synpbase
-OS: Windows 6.2
-
-Hostname: TODOC-ECHO-LAPT
-
-Implementation : impl1
-Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
-
-@N|Running in 64-bit mode
-File C:\Users\eidos\Desktop\common\db\work\impl1\synwork\study_001_impl1_comp.srs changed - recompiling
+File C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\synwork\layer0.srs changed - recompiling
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov  3 19:05:14 2022
+# Fri Nov  4 15:30:05 2022
 
 ###########################################################]
-# Thu Nov  3 19:05:14 2022
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\synwork\study_001_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 24MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov  4 15:30:05 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: TODOC-ECHO-LAPT
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+@N|Running in 64-bit mode
+Options changed - recompiling
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
+@N: NF107 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":13:7:13:26|Selected library: work cell: ci_stim_fpga_wrapper view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov  4 15:30:06 2022
+
+###########################################################]
+Premap Report
+
+# Fri Nov  4 15:30:07 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -236,36 +246,35 @@ Implementation : impl1
 Synopsys Lattice Technology Pre-mapping, Version map202103lat, Build 070R, Built Oct  6 2021 11:12:38, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 119MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 130MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 131MB)
 
-Reading constraint file: C:\Users\eidos\Desktop\common\db\sdc\common.sdc
-@L: C:\Users\eidos\Desktop\common\db\work\impl1\study_001_impl1_scck.rpt 
-See clock summary report "C:\Users\eidos\Desktop\common\db\work\impl1\study_001_impl1_scck.rpt"
+Reading constraint file: C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\sdc\common.sdc
+@L: C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\study_001_impl1_scck.rpt 
+See clock summary report "C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\study_001_impl1_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 130MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 131MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 130MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 131MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
-@N: MO111 :"c:\users\eidos\desktop\common\db\top\ci_stim_fpga.v":120:6:120:10|Tristate driver w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) on net w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_5(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_3(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_5(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_3(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @W: MT453 :|clock period is too long for clock ck_div64x64, changing period from 1024000.0 to 16000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 512000.0 ns to 8000.0 ns. 
 @W: MT453 :|clock period is too long for clock ck_db, changing period from 32000.0 to 16000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 16000.0 ns to 8000.0 ns. 
 Encoding state machine r_state[4:0] (in view: work.stim_cg_fsm(verilog))
@@ -279,20 +288,20 @@ original code -> new code
 Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
-@W: MT548 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":6:0:6:0|Source for clock ck_cg_fsm not found in netlist.
-@W: MT548 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":36:0:36:0|Source for clock ck_div64x4 not found in netlist.
-@W: MT548 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":42:0:42:0|Source for clock ck_slow not found in netlist.
+@W: MT548 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":6:0:6:0|Source for clock ck_cg_fsm not found in netlist.
+@W: MT548 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":36:0:36:0|Source for clock ck_div64x4 not found in netlist.
+@W: MT548 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":42:0:42:0|Source for clock ck_slow not found in netlist.
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=8 on top level netlist ci_stim_fpga_wrapper 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 
 
@@ -321,7 +330,7 @@ Clock Load Summary
                 Clock     Source                                   Clock Pin                                                   Non-clock Pin     Non-clock Pin            
 Clock           Load      Pin                                      Seq Example                                                 Seq Example       Comb Example             
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-rootClk         201       w_clk_1.OUT[0](tri)                      r_async_ack_mode_transition[2:0].C                          -                 -                        
+rootClk         201       internal_osc.OSC(OSCH)                   r_async_ack_mode_transition[2:0].C                          -                 -                        
 ck_div4         48        u_div4_clk.r_gen_clk.Q[0](dffre)         u_cg_fsm.r_sync_search_disabled_channel_phase_end_p_d.C     -                 -                        
 ck_div64        6         u_div64_clk.r_gen_clk.Q[0](dffre)        u_div64x64_clk.r_gen_clk.C                                  -                 ck_div64.I[0](keepbuf)   
 ck_div64x64     2         u_div64x64_clk.r_gen_clk.Q[0](dffre)     u_div2_clk.div2_count.C                                     -                 ck_div64x64.I[0](keepbuf)
@@ -344,23 +353,24 @@ For details review file gcc_ICG_report.rpt
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-2 non-gated/non-generated clock tree(s) driving 20 clock pin(s) of sequential element(s)
+3 non-gated/non-generated clock tree(s) driving 221 clock pin(s) of sequential element(s)
 4 gated/generated clock tree(s) driving 62 clock pin(s) of sequential element(s)
 0 instances converted, 62 sequential instances remain driven by gated/generated clocks
 
-============================ Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
-----------------------------------------------------------------------------------------
-@KP:ckid0_4       sw1_a               port                   12         sw1_counter[7:0]
-@KP:ckid0_5       sw2_a               port                   8          sw2_counter[7:0]
-========================================================================================
+============================ Non-Gated/Non-Generated Clocks =============================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance 
+-----------------------------------------------------------------------------------------
+@KP:ckid0_2       internal_osc.OSC     OSCH                   201        r_dac_amp_1[7:0]
+@KP:ckid0_5       sw1_a                port                   12         sw1_counter[7:0]
+@KP:ckid0_6       sw2_a                port                   8          sw2_counter[7:0]
+=========================================================================================
 =========================================================================== Gated/Generated Clocks ============================================================================
 Clock Tree ID     Driving Element           Drive Element Type     Unconverted Fanout     Sample Instance                     Explanation                                      
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @KP:ckid0_0       w_div64x64_clk.OUT[0]     keepbuf                2                      u_div2_clk.r_gen_clk                Clock from Generated Clock directive             
 @KP:ckid0_1       w_div64_clk.OUT[0]        keepbuf                6                      u_div64x64_clk.div64_count[4:0]     Clock from Generated Clock directive             
-@KP:ckid0_2       u_div2_clk.o_gen_clk      div2_clk               6                      u_debounce_sw2.r_pb_in[2:0]         Gated clock propagation blocked by synkeep buffer
-@KP:ckid0_3       u_div4_clk.o_gen_clk      div4_clk               48                     u_cg_fsm.r_duration_cnt[7:0]        Gated clock propagation blocked by synkeep buffer
+@KP:ckid0_3       u_div2_clk.o_gen_clk      div2_clk               6                      u_debounce_sw2.r_pb_in[2:0]         Gated clock propagation blocked by synkeep buffer
+@KP:ckid0_4       u_div4_clk.o_gen_clk      div4_clk               48                     u_cg_fsm.r_duration_cnt[7:0]        Gated clock propagation blocked by synkeep buffer
 ===============================================================================================================================================================================
 
 
@@ -369,30 +379,32 @@ Clock Tree ID     Driving Element           Drive Element Type     Unconverted F
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":12:0:12:0|Source for clock ck_div4 should be moved to net u_div4_clk.r_gen_clk connected to driving cell pin u_div4_clk.r_gen_clk.Q[0] 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":18:0:18:0|Source for clock ck_div64 should be moved to net u_div64_clk.r_gen_clk connected to driving cell pin u_div64_clk.r_gen_clk.Q[0] 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":18:0:18:0|Source for clock ck_div64 should be moved to net u_div64_clk.r_gen_clk connected to driving cell pin u_div64_clk.r_gen_clk.Q[0] 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":24:0:24:0|Source for clock ck_div64x64 should be moved to net u_div64x64_clk.r_gen_clk connected to driving cell pin u_div64x64_clk.r_gen_clk.Q[0] 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":24:0:24:0|Source for clock ck_div64x64 should be moved to net u_div64x64_clk.r_gen_clk connected to driving cell pin u_div64x64_clk.r_gen_clk.Q[0] 
-@W:"c:/users/eidos/desktop/common/db/sdc/common.sdc":30:0:30:0|Source for clock ck_db should be moved to net u_div2_clk.r_gen_clk connected to driving cell pin u_div2_clk.r_gen_clk.Q[0] 
-@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\eidos\Desktop\common\db\work\impl1\study_001_impl1_cck.rpt" .
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":12:0:12:0|Source for clock ck_div4 should be moved to net u_div4_clk.r_gen_clk connected to driving cell pin u_div4_clk.r_gen_clk.Q[0] 
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":18:0:18:0|Source for clock ck_div64 should be moved to net u_div64_clk.r_gen_clk connected to driving cell pin u_div64_clk.r_gen_clk.Q[0] 
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":18:0:18:0|Source for clock ck_div64 should be moved to net u_div64_clk.r_gen_clk connected to driving cell pin u_div64_clk.r_gen_clk.Q[0] 
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":24:0:24:0|Source for clock ck_div64x64 should be moved to net u_div64x64_clk.r_gen_clk connected to driving cell pin u_div64x64_clk.r_gen_clk.Q[0] 
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":24:0:24:0|Source for clock ck_div64x64 should be moved to net u_div64x64_clk.r_gen_clk connected to driving cell pin u_div64x64_clk.r_gen_clk.Q[0] 
+@W:"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":30:0:30:0|Source for clock ck_db should be moved to net u_div2_clk.r_gen_clk connected to driving cell pin u_div2_clk.r_gen_clk.Q[0] 
+@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\study_001_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 95MB peak: 178MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov  3 19:05:16 2022
+# Fri Nov  4 15:30:08 2022
 
 ###########################################################]
-# Thu Nov  3 19:05:16 2022
+Map & Optimize Report
+
+# Fri Nov  4 15:30:09 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -411,99 +423,98 @@ Implementation : impl1
 Synopsys Lattice Technology Mapper, Version map202103lat, Build 070R, Built Oct  6 2021 11:12:38, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 119MB)
 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 131MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 131MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 @W: MT453 :|clock period is too long for clock ck_div64x64, changing period from 1024000.0 to 16000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 512000.0 ns to 8000.0 ns. 
 @W: MT453 :|clock period is too long for clock ck_db, changing period from 32000.0 to 16000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 16000.0 ns to 8000.0 ns. 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
-
-@N: MO111 :"c:\users\eidos\desktop\common\db\top\ci_stim_fpga.v":120:6:120:10|Tristate driver w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) on net w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) has its enable tied to GND.
-
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
-
-@N: MO230 :"c:\users\eidos\desktop\common\db\top\ci_stim_fpga.v":505:1:505:6|Found up-down counter in view:work.ci_stim_fpga_wrapper(verilog) instance sw1_counter[7:0]  
-@N: MO230 :"c:\users\eidos\desktop\common\db\top\ci_stim_fpga.v":534:1:534:6|Found up-down counter in view:work.ci_stim_fpga_wrapper(verilog) instance sw2_counter[7:0]  
-@N: MO231 :"c:\users\eidos\desktop\common\db\design\fpga_clk_modules.v":51:1:51:6|Found counter in view:work.ci_stim_fpga_wrapper(verilog) instance u_div64x64_clk.div64_count[4:0] 
-@N: MO231 :"c:\users\eidos\desktop\common\db\design\fpga_clk_modules.v":51:1:51:6|Found counter in view:work.ci_stim_fpga_wrapper(verilog) instance u_div64_clk.div64_count[4:0] 
-@N: MO231 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":344:1:344:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_duration_cnt[7:0] 
-@N: MO231 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":815:1:815:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_interval_cnt[7:0] 
-@N: MO231 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":291:1:291:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_rate_cnt[7:0] 
-@N: MF179 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":304:24:304:49|Found 8 by 8 bit equality operator ('==') w_rate_tmout (in view: work.stim_cg_fsm(verilog))
-@N: MF179 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":357:28:357:61|Found 8 by 8 bit equality operator ('==') w_duration_tmout (in view: work.stim_cg_fsm(verilog))
-@N: MF179 :"c:\users\eidos\desktop\common\db\design\stim_cg_fsm.v":837:28:837:67|Found 8 by 8 bit equality operator ('==') w_interval_tmout (in view: work.stim_cg_fsm(verilog))
-
-Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+
+@N: MO230 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":571:1:571:6|Found up-down counter in view:work.ci_stim_fpga_wrapper(verilog) instance sw1_counter[7:0]  
+@N: MO230 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\top\ci_stim_fpga.v":608:1:608:6|Found up-down counter in view:work.ci_stim_fpga_wrapper(verilog) instance sw2_counter[7:0]  
+@N: MO231 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\fpga_clk_modules.v":67:1:67:6|Found counter in view:work.ci_stim_fpga_wrapper(verilog) instance u_div64x64_clk.div64_count[4:0] 
+@N: MO231 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\fpga_clk_modules.v":67:1:67:6|Found counter in view:work.ci_stim_fpga_wrapper(verilog) instance u_div64_clk.div64_count[4:0] 
+@N: MO231 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":370:1:370:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_duration_cnt[7:0] 
+@N: MO231 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":1037:1:1037:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_interval_cnt[7:0] 
+@N: MO231 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":295:1:295:6|Found counter in view:work.stim_cg_fsm(verilog) instance r_rate_cnt[7:0] 
+@N: MF179 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":318:24:318:49|Found 8 by 8 bit equality operator ('==') w_rate_tmout (in view: work.stim_cg_fsm(verilog))
+@N: MF179 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":389:28:389:61|Found 8 by 8 bit equality operator ('==') w_duration_tmout (in view: work.stim_cg_fsm(verilog))
+@N: MF179 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\stim_cg_fsm.v":1073:28:1073:67|Found 8 by 8 bit equality operator ('==') w_interval_tmout (in view: work.stim_cg_fsm(verilog))
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 181MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 183MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 183MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 183MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 183MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 191MB peak: 191MB)
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 190MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    52.60ns		 248 /       283
+   1		0h:00m:01s		    52.60ns		 251 /       283
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 191MB peak: 192MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 190MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 192MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 190MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 155MB peak: 192MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 191MB)
 
-Writing Analyst data base C:\Users\eidos\Desktop\common\db\work\impl1\synwork\study_001_impl1_m.srm
+Writing Analyst data base C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\synwork\study_001_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 192MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 191MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: C:\Users\eidos\Desktop\common\db\work\impl1\study_001_impl1.edi
+@N: FX1056 |Writing EDF file: C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\study_001_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 197MB peak: 197MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 196MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 197MB peak: 198MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 197MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 195MB peak: 198MB)
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 197MB)
 
 @N: MT615 |Found clock rootClk with period 250.00ns 
 @N: MT615 |Found clock ck_sw1_a with period 10000.00ns 
@@ -515,7 +526,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Nov  3 19:05:23 2022
+# Timing report written on Fri Nov  4 15:30:14 2022
 #
 
 
@@ -523,7 +534,7 @@ Top view:               ci_stim_fpga_wrapper
 Requested Frequency:    0.1 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\eidos\Desktop\common\db\sdc\common.sdc
+Constraint File(s):    C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\sdc\common.sdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -535,13 +546,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 53.048
+Worst slack in design: 53.080
 
                    Requested     Estimated     Requested     Estimated                   Clock                        Clock           
 Starting Clock     Frequency     Frequency     Period        Period        Slack         Type                         Group           
 --------------------------------------------------------------------------------------------------------------------------------------
 ck_db              0.1 MHz       9.8 MHz       16000.000     102.285       248.402       generated (from rootClk)     default_clkgroup
-ck_div4            16.0 MHz      105.8 MHz     62.500        9.452         53.048        generated (from rootClk)     default_clkgroup
+ck_div4            16.0 MHz      106.2 MHz     62.500        9.420         53.080        generated (from rootClk)     default_clkgroup
 ck_div64           0.1 MHz       228.0 MHz     16000.000     4.386         15995.614     generated (from rootClk)     default_clkgroup
 ck_div64x64        0.1 MHz       577.4 MHz     16000.000     1.732         15998.268     generated (from rootClk)     default_clkgroup
 ck_sw1_a           0.1 MHz       121.2 MHz     10000.000     8.250         9991.750      declared                     default_clkgroup
@@ -550,8 +561,8 @@ rootClk            4.0 MHz       44.6 MHz      250.000       22.434        59.61
 System             100.0 MHz     NA            10.000        NA            NA            system                       system_clkgroup 
 ======================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
-@W: MT695 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":18:0:18:0|Clock ck_div64 has 2 sources 
-@W: MT695 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":24:0:24:0|Clock ck_div64x64 has 2 sources 
+@W: MT695 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":18:0:18:0|Clock ck_div64 has 2 sources 
+@W: MT695 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":24:0:24:0|Clock ck_div64x64 has 2 sources 
 
 
 
@@ -564,7 +575,7 @@ Clocks                    |    rise  to  rise       |    fall  to  fall   |    r
 --------------------------------------------------------------------------------------------------------------------
 Starting     Ending       |  constraint  slack      |  constraint  slack  |  constraint  slack  |  constraint  slack
 --------------------------------------------------------------------------------------------------------------------
-rootClk      rootClk      |  250.000     236.976    |  No paths    -      |  No paths    -      |  No paths    -    
+rootClk      rootClk      |  250.000     237.909    |  No paths    -      |  No paths    -      |  No paths    -    
 rootClk      ck_sw1_a     |  250.000     False      |  No paths    -      |  No paths    -      |  No paths    -    
 rootClk      ck_div4      |  62.500      59.616     |  No paths    -      |  No paths    -      |  No paths    -    
 ck_sw1_a     rootClk      |  250.000     False      |  No paths    -      |  No paths    -      |  No paths    -    
@@ -573,7 +584,7 @@ ck_sw2_a     rootClk      |  250.000     False      |  No paths    -      |  No 
 ck_sw2_a     ck_sw1_a     |  10000.000   False      |  No paths    -      |  No paths    -      |  No paths    -    
 ck_sw2_a     ck_sw2_a     |  10000.000   9992.754   |  No paths    -      |  No paths    -      |  No paths    -    
 ck_div4      rootClk      |  62.500      56.892     |  No paths    -      |  No paths    -      |  No paths    -    
-ck_div4      ck_div4      |  62.500      53.048     |  No paths    -      |  No paths    -      |  No paths    -    
+ck_div4      ck_div4      |  62.500      53.080     |  No paths    -      |  No paths    -      |  No paths    -    
 ck_div64     ck_div64     |  16000.000   15995.614  |  No paths    -      |  No paths    -      |  No paths    -    
 ck_div64x64  ck_div64x64  |  16000.000   15998.268  |  No paths    -      |  No paths    -      |  No paths    -    
 ck_db        rootClk      |  250.000     248.402    |  No paths    -      |  No paths    -      |  No paths    -    
@@ -677,16 +688,16 @@ Starting Points with Worst Slack
 Instance                        Reference     Type        Pin     Net                    Time        Slack 
                                 Clock                                                                      
 -----------------------------------------------------------------------------------------------------------
-u_cg_fsm.r_sync_rate[1]         ck_div4       FD1P3DX     Q       r_sync_rate[1]         1.108       53.048
 u_cg_fsm.r_duration_cnt[0]      ck_div4       FD1P3DX     Q       r_duration_cnt[0]      1.108       53.080
 u_cg_fsm.r_duration_cnt[1]      ck_div4       FD1P3DX     Q       r_duration_cnt[1]      1.108       53.080
-u_cg_fsm.r_rate_cnt[0]          ck_div4       FD1P3DX     Q       r_rate_cnt[0]          1.044       53.112
-u_cg_fsm.r_rate_cnt[1]          ck_div4       FD1P3DX     Q       r_rate_cnt[1]          1.044       53.112
-u_cg_fsm.r_sync_rate[0]         ck_div4       FD1P3DX     Q       r_sync_rate[0]         1.044       53.112
+u_cg_fsm.r_sync_rate[1]         ck_div4       FD1P3DX     Q       r_sync_rate[1]         1.108       53.080
+u_cg_fsm.r_rate_cnt[0]          ck_div4       FD1P3DX     Q       r_rate_cnt[0]          1.044       53.144
+u_cg_fsm.r_rate_cnt[1]          ck_div4       FD1P3DX     Q       r_rate_cnt[1]          1.044       53.144
 u_cg_fsm.r_sync_duration[0]     ck_div4       FD1P3DX     Q       r_duration_cnt15_0     1.044       53.144
 u_cg_fsm.r_sync_duration[1]     ck_div4       FD1P3DX     Q       r_duration_cnt15_1     1.044       53.144
-u_cg_fsm.r_sync_rate[4]         ck_div4       FD1P3DX     Q       r_sync_rate[4]         1.108       53.190
+u_cg_fsm.r_sync_rate[0]         ck_div4       FD1P3DX     Q       r_sync_rate[0]         1.044       53.144
 u_cg_fsm.r_duration_cnt[2]      ck_div4       FD1P3DX     Q       r_duration_cnt[2]      1.108       53.222
+u_cg_fsm.r_duration_cnt[3]      ck_div4       FD1P3DX     Q       r_duration_cnt[3]      1.108       53.222
 ===========================================================================================================
 
 
@@ -697,16 +708,16 @@ Ending Points with Worst Slack
 Instance                       Reference     Type        Pin     Net                     Time         Slack 
                                Clock                                                                        
 ------------------------------------------------------------------------------------------------------------
-u_cg_fsm.r_rate_cnt[7]         ck_div4       FD1P3DX     D       r_rate_cnt_s[7]         62.394       53.048
 u_cg_fsm.r_duration_cnt[7]     ck_div4       FD1P3DX     D       r_duration_cnt_s[7]     62.394       53.080
-u_cg_fsm.r_rate_cnt[5]         ck_div4       FD1P3DX     D       r_rate_cnt_s[5]         62.394       53.190
-u_cg_fsm.r_rate_cnt[6]         ck_div4       FD1P3DX     D       r_rate_cnt_s[6]         62.394       53.190
+u_cg_fsm.r_rate_cnt[7]         ck_div4       FD1P3DX     D       r_rate_cnt_s[7]         62.394       53.080
 u_cg_fsm.r_duration_cnt[5]     ck_div4       FD1P3DX     D       r_duration_cnt_s[5]     62.394       53.222
 u_cg_fsm.r_duration_cnt[6]     ck_div4       FD1P3DX     D       r_duration_cnt_s[6]     62.394       53.222
-u_cg_fsm.r_rate_cnt[3]         ck_div4       FD1P3DX     D       r_rate_cnt_s[3]         62.394       53.333
-u_cg_fsm.r_rate_cnt[4]         ck_div4       FD1P3DX     D       r_rate_cnt_s[4]         62.394       53.333
+u_cg_fsm.r_rate_cnt[5]         ck_div4       FD1P3DX     D       r_rate_cnt_s[5]         62.394       53.222
+u_cg_fsm.r_rate_cnt[6]         ck_div4       FD1P3DX     D       r_rate_cnt_s[6]         62.394       53.222
 u_cg_fsm.r_duration_cnt[3]     ck_div4       FD1P3DX     D       r_duration_cnt_s[3]     62.394       53.365
 u_cg_fsm.r_duration_cnt[4]     ck_div4       FD1P3DX     D       r_duration_cnt_s[4]     62.394       53.365
+u_cg_fsm.r_rate_cnt[3]         ck_div4       FD1P3DX     D       r_rate_cnt_s[3]         62.394       53.365
+u_cg_fsm.r_rate_cnt[4]         ck_div4       FD1P3DX     D       r_rate_cnt_s[4]         62.394       53.365
 ============================================================================================================
 
 
@@ -721,50 +732,50 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         62.394
 
-    - Propagation time:                      9.347
+    - Propagation time:                      9.315
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     53.048
+    = Slack (critical) :                     53.080
 
     Number of logic level(s):                9
-    Starting point:                          u_cg_fsm.r_sync_rate[1] / Q
-    Ending point:                            u_cg_fsm.r_rate_cnt[7] / D
+    Starting point:                          u_cg_fsm.r_duration_cnt[0] / Q
+    Ending point:                            u_cg_fsm.r_duration_cnt[7] / D
     The start point is clocked by            ck_div4 [rising] (rise=0.000 fall=31.250 period=62.500) on pin CK
     The end   point is clocked by            ck_div4 [rising] (rise=0.000 fall=31.250 period=62.500) on pin CK
 
-Instance / Net                                     Pin      Pin               Arrival     No. of    
-Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------
-u_cg_fsm.r_sync_rate[1]               FD1P3DX      Q        Out     1.108     1.108 r     -         
-r_sync_rate[1]                        Net          -        -       -         -           3         
-u_cg_fsm.w_rate_tmout_0_I_1_0         CCU2D        A1       In      0.000     1.108 r     -         
-u_cg_fsm.w_rate_tmout_0_I_1_0         CCU2D        COUT     Out     1.544     2.652 r     -         
-w_rate_tmout_0_data_tmp[0]            Net          -        -       -         -           1         
-u_cg_fsm.w_rate_tmout_0_I_9_0         CCU2D        CIN      In      0.000     2.652 r     -         
-u_cg_fsm.w_rate_tmout_0_I_9_0         CCU2D        COUT     Out     0.143     2.795 r     -         
-w_rate_tmout_0_data_tmp[2]            Net          -        -       -         -           1         
-u_cg_fsm.w_rate_tmout_0_I_21_0        CCU2D        CIN      In      0.000     2.795 r     -         
-u_cg_fsm.w_rate_tmout_0_I_21_0        CCU2D        S1       Out     1.757     4.552 r     -         
-w_rate_tmout_0_data_tmp_i[3]          Net          -        -       -         -           5         
-u_cg_fsm.r_sync_trigger_d_RNI89HK     ORCALUT4     C        In      0.000     4.552 r     -         
-u_cg_fsm.r_sync_trigger_d_RNI89HK     ORCALUT4     Z        Out     1.273     5.825 f     -         
-r_rate_cnt                            Net          -        -       -         -           9         
-u_cg_fsm.r_rate_cnt_cry_0[0]          CCU2D        A1       In      0.000     5.825 f     -         
-u_cg_fsm.r_rate_cnt_cry_0[0]          CCU2D        COUT     Out     1.544     7.369 r     -         
-r_rate_cnt_cry[0]                     Net          -        -       -         -           1         
-u_cg_fsm.r_rate_cnt_cry_0[1]          CCU2D        CIN      In      0.000     7.369 r     -         
-u_cg_fsm.r_rate_cnt_cry_0[1]          CCU2D        COUT     Out     0.143     7.512 r     -         
-r_rate_cnt_cry[2]                     Net          -        -       -         -           1         
-u_cg_fsm.r_rate_cnt_cry_0[3]          CCU2D        CIN      In      0.000     7.512 r     -         
-u_cg_fsm.r_rate_cnt_cry_0[3]          CCU2D        COUT     Out     0.143     7.655 r     -         
-r_rate_cnt_cry[4]                     Net          -        -       -         -           1         
-u_cg_fsm.r_rate_cnt_cry_0[5]          CCU2D        CIN      In      0.000     7.655 r     -         
-u_cg_fsm.r_rate_cnt_cry_0[5]          CCU2D        COUT     Out     0.143     7.798 r     -         
-r_rate_cnt_cry[6]                     Net          -        -       -         -           1         
-u_cg_fsm.r_rate_cnt_s_0[7]            CCU2D        CIN      In      0.000     7.798 r     -         
-u_cg_fsm.r_rate_cnt_s_0[7]            CCU2D        S0       Out     1.549     9.347 r     -         
-r_rate_cnt_s[7]                       Net          -        -       -         -           1         
-u_cg_fsm.r_rate_cnt[7]                FD1P3DX      D        In      0.000     9.347 r     -         
-====================================================================================================
+Instance / Net                                      Pin      Pin               Arrival     No. of    
+Name                                   Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+u_cg_fsm.r_duration_cnt[0]             FD1P3DX      Q        Out     1.108     1.108 r     -         
+r_duration_cnt[0]                      Net          -        -       -         -           3         
+u_cg_fsm.w_duration_tmout_0_I_1_0      CCU2D        D1       In      0.000     1.108 r     -         
+u_cg_fsm.w_duration_tmout_0_I_1_0      CCU2D        COUT     Out     1.544     2.652 r     -         
+w_duration_tmout_0_data_tmp[0]         Net          -        -       -         -           1         
+u_cg_fsm.w_duration_tmout_0_I_9_0      CCU2D        CIN      In      0.000     2.652 r     -         
+u_cg_fsm.w_duration_tmout_0_I_9_0      CCU2D        COUT     Out     0.143     2.795 r     -         
+w_duration_tmout_0_data_tmp[2]         Net          -        -       -         -           1         
+u_cg_fsm.w_duration_tmout_0_I_21_0     CCU2D        CIN      In      0.000     2.795 r     -         
+u_cg_fsm.w_duration_tmout_0_I_21_0     CCU2D        S1       Out     1.725     4.520 r     -         
+w_duration_tmout_0_data_tmp_i[3]       Net          -        -       -         -           4         
+u_cg_fsm.r_duration_cnt19_i            ORCALUT4     C        In      0.000     4.520 r     -         
+u_cg_fsm.r_duration_cnt19_i            ORCALUT4     Z        Out     1.273     5.793 f     -         
+r_duration_cnt                         Net          -        -       -         -           9         
+u_cg_fsm.r_duration_cnt_cry_0[0]       CCU2D        A1       In      0.000     5.793 f     -         
+u_cg_fsm.r_duration_cnt_cry_0[0]       CCU2D        COUT     Out     1.544     7.337 r     -         
+r_duration_cnt_cry[0]                  Net          -        -       -         -           1         
+u_cg_fsm.r_duration_cnt_cry_0[1]       CCU2D        CIN      In      0.000     7.337 r     -         
+u_cg_fsm.r_duration_cnt_cry_0[1]       CCU2D        COUT     Out     0.143     7.480 r     -         
+r_duration_cnt_cry[2]                  Net          -        -       -         -           1         
+u_cg_fsm.r_duration_cnt_cry_0[3]       CCU2D        CIN      In      0.000     7.480 r     -         
+u_cg_fsm.r_duration_cnt_cry_0[3]       CCU2D        COUT     Out     0.143     7.623 r     -         
+r_duration_cnt_cry[4]                  Net          -        -       -         -           1         
+u_cg_fsm.r_duration_cnt_cry_0[5]       CCU2D        CIN      In      0.000     7.623 r     -         
+u_cg_fsm.r_duration_cnt_cry_0[5]       CCU2D        COUT     Out     0.143     7.766 r     -         
+r_duration_cnt_cry[6]                  Net          -        -       -         -           1         
+u_cg_fsm.r_duration_cnt_s_0[7]         CCU2D        CIN      In      0.000     7.766 r     -         
+u_cg_fsm.r_duration_cnt_s_0[7]         CCU2D        S0       Out     1.549     9.315 r     -         
+r_duration_cnt_s[7]                    Net          -        -       -         -           1         
+u_cg_fsm.r_duration_cnt[7]             FD1P3DX      D        In      0.000     9.315 r     -         
+=====================================================================================================
 
 
 
@@ -1040,7 +1051,7 @@ Instance           Reference     Type        Pin     Net                Time    
 sw2_counter[2]     ck_sw2_a      FD1S3DX     Q       sw2_counter[2]     1.272       9992.754
 sw2_counter[0]     ck_sw2_a      FD1S3DX     Q       sw2_counter[0]     1.268       9992.758
 sw2_counter[1]     ck_sw2_a      FD1S3DX     Q       sw2_counter[1]     1.268       9992.758
-sw2_counter[3]     ck_sw2_a      FD1S3DX     Q       un1_r_mode_3       1.228       9992.811
+sw2_counter[3]     ck_sw2_a      FD1S3DX     Q       un1_r_mode_3       1.228       9992.807
 sw2_counter[4]     ck_sw2_a      FD1S3DX     Q       sw2_counter[4]     0.972       9995.829
 sw2_counter[5]     ck_sw2_a      FD1S3DX     Q       sw2_counter[5]     0.972       9995.829
 sw2_counter[7]     ck_sw2_a      FD1S3DX     Q       sw2_counter[7]     1.148       9997.537
@@ -1061,8 +1072,8 @@ sw2_counter[4]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[4]     9999.8
 sw2_counter[5]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[5]     9999.894     9992.897
 sw2_counter[2]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[2]     9999.894     9993.040
 sw2_counter[3]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[3]     9999.894     9993.040
-sw2_counter[0]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[0]     9999.894     9993.195
-sw2_counter[1]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[1]     9999.894     9993.195
+sw2_counter[0]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[0]     9999.894     9993.192
+sw2_counter[1]     ck_sw2_a      FD1S3DX     D       sw2_counter_s[1]     9999.894     9993.192
 ===============================================================================================
 
 
@@ -1131,14 +1142,14 @@ Instance                                                            Reference   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 u_cg_fsm.r_anode_phase                                              rootClk       FD1P3DX     Q       w_debug_fsm_led[3]     1.148       59.616
 u_cg_fsm.r_cathod_phase                                             rootClk       FD1P3DX     Q       w_debug_fsm_led[5]     1.148       59.616
-u_cg_fsm.u_sync_cathod_phase_en.r_master_en                         rootClk       FD1P3DX     Q       r_master_en            1.044       59.832
-u_cg_fsm.u_sync_search_disabled_channel_phase_end_p.r_master_en     rootClk       FD1P3DX     Q       r_master_en            1.044       59.832
-u_cg_fsm.u_sync_trigger.r_master_en                                 rootClk       FD1P3DX     Q       r_master_en            1.044       59.832
-u_cg_fsm.u_sync_anode_phase_en.r_master_en                          rootClk       FD1P3DX     Q       r_master_en            1.044       59.832
-u_cg_fsm.u_sync_fsm_trigger.r_slave_en[2]                           rootClk       FD1P3DX     Q       w_slave_ack            1.108       60.304
+u_cg_fsm.u_sync_cathod_phase_en.r_master_en                         rootClk       FD1S3DX     Q       r_master_en            1.108       59.768
+u_cg_fsm.u_sync_search_disabled_channel_phase_end_p.r_master_en     rootClk       FD1S3DX     Q       r_master_en            1.108       59.768
+u_cg_fsm.u_sync_trigger.r_master_en                                 rootClk       FD1S3DX     Q       r_master_en            1.108       59.768
+u_cg_fsm.u_sync_anode_phase_en.r_master_en                          rootClk       FD1S3DX     Q       r_master_en            1.108       59.768
 u_cg_fsm.r_duration[0]                                              rootClk       FD1P3DX     Q       r_duration[0]          0.972       61.423
 u_cg_fsm.r_duration[1]                                              rootClk       FD1P3DX     Q       r_duration[1]          0.972       61.423
 u_cg_fsm.r_duration[2]                                              rootClk       FD1P3DX     Q       r_duration[2]          0.972       61.423
+u_cg_fsm.r_duration[3]                                              rootClk       FD1P3DX     Q       r_duration[3]          0.972       61.423
 ===============================================================================================================================================
 
 
@@ -1157,8 +1168,8 @@ u_cg_fsm.r_duration_cnt[4]                        rootClk       FD1P3DX     SP  
 u_cg_fsm.r_duration_cnt[5]                        rootClk       FD1P3DX     SP      r_duration_cnte     62.028       59.616
 u_cg_fsm.r_duration_cnt[6]                        rootClk       FD1P3DX     SP      r_duration_cnte     62.028       59.616
 u_cg_fsm.r_duration_cnt[7]                        rootClk       FD1P3DX     SP      r_duration_cnte     62.028       59.616
-u_cg_fsm.u_sync_trigger.r_slave_en[0]             rootClk       FD1P3DX     SP      r_slave_en8         62.028       59.832
-u_cg_fsm.u_sync_cathod_phase_en.r_slave_en[0]     rootClk       FD1P3DX     SP      r_slave_en8         62.028       59.832
+u_cg_fsm.u_sync_cathod_phase_en.r_slave_en[0]     rootClk       FD1P3DX     SP      r_slave_en8         62.028       59.768
+u_cg_fsm.u_sync_trigger.r_slave_en[0]             rootClk       FD1P3DX     SP      r_slave_en8         62.028       59.768
 ===========================================================================================================================
 
 
@@ -1199,16 +1210,16 @@ u_cg_fsm.r_duration_cnt[0]                    FD1P3DX      SP       In      0.00
 ##### END OF TIMING REPORT #####]
 
 Timing exceptions that could not be applied
-@W: MT447 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":53:0:53:0|Timing constraint (from [get_clocks rootClk] to [get_clocks ck_sw2_a]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
-@W: MT447 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":55:0:55:0|Timing constraint (from [get_clocks ck_sw1_a] to [get_clocks ck_sw2_a]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
-@W: MT447 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":57:0:57:0|Timing constraint (from [get_clocks ck_div4] to [get_clocks ck_cg_fsm]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
-@W: MT447 :"c:/users/eidos/desktop/common/db/sdc/common.sdc":58:0:58:0|Timing constraint (from [get_clocks ck_cg_fsm] to [get_clocks ck_div4]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":53:0:53:0|Timing constraint (from [get_clocks rootClk] to [get_clocks ck_sw2_a]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
+@W: MT447 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":55:0:55:0|Timing constraint (from [get_clocks ck_sw1_a] to [get_clocks ck_sw2_a]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
+@W: MT447 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":57:0:57:0|Timing constraint (from [get_clocks ck_div4] to [get_clocks ck_cg_fsm]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/eidos/github/fpga_pwm_fsm_practice/common/db/sdc/common.sdc":58:0:58:0|Timing constraint (from [get_clocks ck_cg_fsm] to [get_clocks ck_div4]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design 
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:02s; Memory used current: 196MB peak: 198MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 197MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:02s; Memory used current: 196MB peak: 198MB)
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 197MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1222,33 +1233,34 @@ I/O cells:       77
 Details:
 CCU2D:          50
 FD1P3BX:        16
-FD1P3DX:        162
+FD1P3DX:        156
 FD1S3BX:        21
-FD1S3DX:        43
+FD1S3DX:        49
 GSR:            1
 IB:             18
 IFS1P3BX:       2
 INV:            3
 OB:             59
 OFS1P3DX:       39
-ORCALUT4:       245
+ORCALUT4:       251
+OSCH:           1
 PFUMX:          21
 PUR:            1
 VHI:            14
 VLO:            14
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 69MB peak: 198MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 70MB peak: 197MB)
 
-Process took 0h:00m:07s realtime, 0h:00m:03s cputime
-# Thu Nov  3 19:05:24 2022
+Process took 0h:00m:05s realtime, 0h:00m:01s cputime
+# Fri Nov  4 15:30:14 2022
 
 ###########################################################]
 
 
 Synthesis exit by 0.
 
-edif2ngd  -l "MachXO2" -d LCMXO2-2000ZE -path "C:/Users/eidos/Desktop/common/db/work/impl1" -path "C:/Users/eidos/Desktop/common/db/work"   "C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1.edi" "study_001_impl1.ngo"   
+edif2ngd  -l "MachXO2" -d LCMXO2-2000ZE -path "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1" -path "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work"   "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1.edi" "study_001_impl1.ngo"   
 edif2ngd:  version Diamond (64-bit) 3.12.1.454
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -1263,7 +1275,7 @@ Total REAL Time: 0 secs
 Peak Memory Usage: 13 MB
 
 
-ngdbuild  -a "MachXO2" -d LCMXO2-2000ZE  -p "C:/lscc/diamond/3.12/ispfpga/xo2c00/data"  -p "C:/Users/eidos/Desktop/common/db/work/impl1" -p "C:/Users/eidos/Desktop/common/db/work"  "study_001_impl1.ngo" "study_001_impl1.ngd"  	
+ngdbuild  -a "MachXO2" -d LCMXO2-2000ZE  -p "C:/lscc/diamond/3.12/ispfpga/xo2c00/data"  -p "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1" -p "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work"  "study_001_impl1.ngo" "study_001_impl1.ngd"  	
 ngdbuild:  version Diamond (64-bit) 3.12.1.454
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -1281,6 +1293,7 @@ Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
 
 Running DRC...
 
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="internal_osc_SEDSTDBY" arg2="internal_osc_SEDSTDBY"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[0]" arg2="stim_comp_err_c[0]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[1]" arg2="stim_comp_err_c[1]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[2]" arg2="stim_comp_err_c[2]"  />
@@ -1289,10 +1302,10 @@ Running DRC...
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[5]" arg2="stim_comp_err_c[5]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[6]" arg2="stim_comp_err_c[6]"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="stim_comp_err_c[7]" arg2="stim_comp_err_c[7]"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="8"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="9"  />
 
 Design Results:
-    708 blocks expanded
+    715 blocks expanded
 Complete the first expansion.
 Writing 'study_001_impl1.ngd' ...
 Total CPU Time: 0 secs 
@@ -1300,7 +1313,7 @@ Total REAL Time: 0 secs
 Peak Memory Usage: 21 MB
 
 
-map -a "MachXO2" -p LCMXO2-2000ZE -t TQFP100 -s 1 -oc Commercial   "study_001_impl1.ngd" -o "study_001_impl1_map.ncd" -pr "study_001_impl1.prf" -mp "study_001_impl1.mrp" -lpf "C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" -lpf "C:/Users/eidos/Desktop/common/db/work/study_001.lpf"  -c 0           
+map -a "MachXO2" -p LCMXO2-2000ZE -t TQFP100 -s 1 -oc Commercial   "study_001_impl1.ngd" -o "study_001_impl1_map.ncd" -pr "study_001_impl1.prf" -mp "study_001_impl1.mrp" -lpf "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1_synplify.lpf" -lpf "C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/study_001.lpf"  -c 0           
 map:  version Diamond (64-bit) 3.12.1.454
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -1321,12 +1334,8 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-2000ZETQFP100, Performance used: 1.
 
-    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(6): Semantic error in &quot;FREQUENCY NET &quot;w_clk&quot; 4.000000 MHz ;&quot;: " arg1="w_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="6"  />
-    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(11): Semantic error in &quot;FREQUENCY NET &quot;w_div64_clk&quot; 0.100000 MHz ;&quot;: " arg1="w_div64_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="11"  />
-    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(12): Semantic error in &quot;FREQUENCY NET &quot;w_div64x64_clk&quot; 0.100000 MHz ;&quot;: " arg1="w_div64x64_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="12"  />
-    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(22): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;w_clk&quot; TO CLKNET &quot;sw1_az&quot; ;&quot;: " arg1="w_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="22"  />
-    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(23): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;sw1_az&quot; TO CLKNET &quot;w_clk&quot; ;&quot;: " arg1="w_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="23"  />
-    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf(24): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;sw2_az&quot; TO CLKNET &quot;w_clk&quot; ;&quot;: " arg1="w_clk matches no clock nets in the design. " arg2="C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="24"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1_synplify.lpf(11): Semantic error in &quot;FREQUENCY NET &quot;w_div64_clk&quot; 0.100000 MHz ;&quot;: " arg1="w_div64_clk matches no clock nets in the design. " arg2="C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="11"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1_synplify.lpf(12): Semantic error in &quot;FREQUENCY NET &quot;w_div64x64_clk&quot; 0.100000 MHz ;&quot;: " arg1="w_div64x64_clk matches no clock nets in the design. " arg2="C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1_synplify.lpf" arg3="12"  />
 Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
 Package Status:                     Final          Version 1.44.
 
@@ -1337,198 +1346,32 @@ Removing unused logic...
 
 Optimizing...
 
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="mode_disp_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_db_sw1_pb_d[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_div4_clk/r_gen_clk"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_fsm_trigger/r_slave_en[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_fsm_trigger/r_slave_en[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_anode_phase_en/r_master_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_cathod_phase_en/r_master_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_master_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/u_sync_trigger/r_master_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_sync_cathod_phase[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_sync_cathod_phase[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_state[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_state[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_state[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_state[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel_phase"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_search_disabled_channel[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_rate[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_value[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_phase"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_interval_cnt[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_duration[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_disabled_dac_sel_found_d"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_1[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_channel_0[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_cathod_phase"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm/r_anode_phase"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_trigger_en/r_slave_en[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_trigger_en/r_slave_en[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_trigger_en/r_master_en"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac1_valio[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_dac0_valio[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_comp_enio"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_caio[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg1_selio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg1_selio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg1_selio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg0_selio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg0_selio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_bcg0_selio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="u_cg_fsm_r_stim_anio[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_req_mode_transition"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_rate[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_mode[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_mode[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_mode[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_duration[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_db_sw1_pb_d[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_1[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_dac_amp_0[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_1[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[0]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[3]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[4]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[5]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[6]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_channel_0[7]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_async_ack_mode_transition[1]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="r_async_ack_mode_transition[2]"  />
-    <postMsg mid="52101259" type="Warning" dynamic="1" navigation="0" arg0="pb_p_test"  />
 3 CCU2 constant inputs absorbed.
 
+    <postMsg mid="52101117" type="Warning" dynamic="5" navigation="0" arg0="OSCH" arg1="internal_osc" arg2="4.00" arg3="2.08,2.15,2.22,2.29,2.38,2.46,2.56,2.66,2.77,2.89,3.02,3.17,3.33,3.50,3.69,3.91,4.16,4.29,4.43,4.59,4.75,4.93,5.12,5.32,5.54,5.78,6.05,6.33,6.65,7.00,7.39,7.82,8.31,8.58,8.87,9.17,9.50,9.85,10.23,10.64,11.08,11.57,12.09,12.67,13.30,14.00,14.78,15.65,16.63,17.73,19.00,20.46,22.17,24.18,26.60,29.56,33.25,38.00,44.33,53.20,66.50,88.67,133.00" arg4="9.50"  />
 
 
 
 Design Summary:
-   Number of registers:    235 out of  2352 (10%)
-      PFU registers:          196 out of  2112 (9%)
-      PIO registers:           39 out of   240 (16%)
-   Number of SLICEs:       138 out of  1056 (13%)
-      SLICEs as Logic/ROM:    138 out of  1056 (13%)
+   Number of registers:    283 out of  2352 (12%)
+      PFU registers:          242 out of  2112 (11%)
+      PIO registers:           41 out of   240 (17%)
+   Number of SLICEs:       181 out of  1056 (17%)
+      SLICEs as Logic/ROM:    181 out of  1056 (17%)
       SLICEs as RAM:            0 out of   792 (0%)
-      SLICEs as Carry:         39 out of  1056 (4%)
-   Number of LUT4s:        275 out of  2112 (13%)
-      Number used as logic LUTs:        197
+      SLICEs as Carry:         50 out of  1056 (5%)
+   Number of LUT4s:        354 out of  2112 (17%)
+      Number used as logic LUTs:        254
       Number used as distributed RAM:     0
-      Number used as ripple logic:       78
+      Number used as ripple logic:      100
       Number used as shift registers:     0
-   Number of PIO sites used: 65 + 4(JTAG) out of 80 (86%)
+   Number of PIO sites used: 69 + 4(JTAG) out of 80 (91%)
    Number of block RAMs:  0 out of 8 (0%)
    Number of GSRs:        1 out of 1 (100%)
    EFB used :        No
    JTAG used :       No
    Readback used :   No
-   Oscillator used : No
+   Oscillator used : Yes
    Startup used :    No
    POR :             On
    Bandgap :         On
@@ -1545,59 +1388,57 @@ Design Summary:
    Notes:-
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  3
+   Number of clocks:  7
+     Net w_clk: 129 loads, 129 rising, 0 falling (Driver: internal_osc )
      Net sw1_az: 7 loads, 7 rising, 0 falling (Driver: PIO sw1_a )
+     Net w_db_clk: 4 loads, 4 rising, 0 falling (Driver: u_div2_clk/r_gen_clk )
+     Net w_div64x64_clk_0: 2 loads, 2 rising, 0 falling (Driver: u_div64x64_clk/r_gen_clk )
+     Net w_div64_clk_0: 4 loads, 4 rising, 0 falling (Driver: u_div64_clk/r_gen_clk )
      Net w_div4_clk: 30 loads, 30 rising, 0 falling (Driver: u_div4_clk/r_gen_clk )
      Net sw2_az: 4 loads, 4 rising, 0 falling (Driver: PIO sw2_a )
-   Number of Clock Enables:  34
+   Number of Clock Enables:  28
      Net sw2_counter26_i: 2 loads, 2 LSLICEs
      Net c_channel_0_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
-     Net u_cg_fsm/u_sync_fsm_trigger/r_master_en_RNO_0_0: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/u_sync_fsm_trigger/r_slave_en8: 1 loads, 1 LSLICEs
-     Net c_duration_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
-     Net c_channel_1_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/u_sync_fsm_trigger/r_slave_en8: 2 loads, 2 LSLICEs
      Net u_cg_fsm/u_sync_anode_phase_en/r_slave_en8: 2 loads, 2 LSLICEs
-     Net u_cg_fsm/u_sync_anode_phase_en/un1_i_men_1_0: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/u_sync_cathod_phase_en/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm/u_sync_trigger/r_slave_en8: 2 loads, 2 LSLICEs
+     Net u_cg_fsm/w_sync_trigger: 8 loads, 8 LSLICEs
+     Net u_cg_fsm/r_search_disabled_channel_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_cathod_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_anode_phase_RNO: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/un1_w_disabled_dac_sel_found_RNIDERI: 4 loads, 4 LSLICEs
+     Net u_cg_fsm/un1_r_sync_search_disabled_channel_phase_end_p_d_g: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_rate_cnte: 5 loads, 5 LSLICEs
+     Net u_cg_fsm/un1_i_polarity_1: 24 loads, 24 LSLICEs
+     Net u_cg_fsm/un1_c_next_state_0_sqmuxa_1_i: 1 loads, 1 LSLICEs
+     Net u_cg_fsm/r_interval_cnte: 5 loads, 5 LSLICEs
+     Net u_cg_fsm/r_duration_cnte: 5 loads, 5 LSLICEs
+     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 16 loads, 0 LSLICEs
+     Net u_cg_fsm.w_search_disabled_channel_phase_end_p: 6 loads, 0 LSLICEs
      Net sw1_b_c: 1 loads, 1 LSLICEs
      Net un1_c_dac_amp_1_0_sqmuxa_1_i[0]: 4 loads, 4 LSLICEs
      Net c_rate_1_sqmuxa_i: 4 loads, 4 LSLICEs
      Net un1_c_dac_amp_0_0_sqmuxa[0]: 4 loads, 4 LSLICEs
-     Net u_cg_fsm/u_sync_cathod_phase_en/r_slave_en8: 2 loads, 2 LSLICEs
-     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 16 loads, 0 LSLICEs
-     Net u_cg_fsm/u_sync_cathod_phase_en/un1_i_men_1: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_master_en_RNO_0: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/u_sync_search_disabled_channel_phase_end_p/r_slave_en8: 2 loads, 2 LSLICEs
-     Net u_cg_fsm.w_search_disabled_channel_phase_end_p: 6 loads, 0 LSLICEs
-     Net u_cg_fsm/u_sync_trigger/r_master_en_RNO: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/u_sync_trigger/r_slave_en8: 2 loads, 2 LSLICEs
-     Net u_cg_fsm/w_sync_trigger: 8 loads, 8 LSLICEs
-     Net u_cg_fsm/r_cathod_phase_RNO: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/r_anode_phase_RNO: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/r_search_disabled_channel_phase_RNI843J1: 4 loads, 4 LSLICEs
-     Net u_cg_fsm/r_search_disabled_channel_phase_RNO: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/un1_r_sync_search_disabled_channel_phase_end_p_d_g: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/r_rate_cnte: 5 loads, 5 LSLICEs
-     Net u_cg_fsm/un1_i_polarity_1: 16 loads, 16 LSLICEs
-     Net u_cg_fsm/un1_c_next_state_0_sqmuxa_1_i: 1 loads, 1 LSLICEs
-     Net u_cg_fsm/r_interval_cnte: 4 loads, 4 LSLICEs
-     Net u_cg_fsm/r_duration_cnte: 5 loads, 5 LSLICEs
+     Net c_channel_1_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
+     Net c_duration_0_sqmuxa_1_i: 4 loads, 4 LSLICEs
      Net u_trigger_en/r_slave_en8: 2 loads, 2 LSLICEs
-     Net u_trigger_en/un1_i_men_1_1: 1 loads, 1 LSLICEs
      Net un1_w_async_ack_mode_transition_p: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net i_rst_n_c merged into GSR:  235
+   Number of local set/reset loads for net i_rst_n_c merged into GSR:  283
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net polarity_c[2]: 28 loads
      Net display_item_num[2]: 26 loads
-     Net sw2_counter26: 18 loads
-     Net sw2_counter[2]: 17 loads
-     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 16 loads
-     Net u_cg_fsm/un1_i_polarity_1: 16 loads
-     Net sw2_counter[0]: 15 loads
-     Net sw2_counter[1]: 15 loads
-     Net CO0: 13 loads
-     Net polarity_c[2]: 12 loads
-     Net sw2_b_c: 10 loads
+     Net u_cg_fsm/un1_i_polarity_1: 24 loads
+     Net sw2_counter26: 19 loads
+     Net sw2_counter[2]: 18 loads
+     Net u_cg_fsm.c_cathod_phase_en_0_sqmuxa: 17 loads
+     Net sw2_counter[0]: 16 loads
+     Net sw2_counter[1]: 16 loads
+     Net u_cg_fsm/c_set_mode_monopolar8: 16 loads
+     Net u_trigger_en.r_slave_en[1]: 14 loads
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="T11" arg1="led_out[0]"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="A10" arg1="i_rst_n"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="N13" arg1="stim_bcg1_sel[2]"  />
@@ -1659,8 +1500,12 @@ Design Summary:
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="R16" arg1="led_out[2]"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="T10" arg1="led_out[1]"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="D3" arg1="polarity[2]"  />
+    <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="D1" arg1="polarity[1]"  />
+    <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="D2" arg1="polarity[0]"  />
+    <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="P13" arg1="sw2_pb"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="P15" arg1="sw2_b"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="P14" arg1="sw2_a"  />
+    <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="N12" arg1="sw1_pb"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="P11" arg1="sw1_b"  />
     <postMsg mid="51001102" type="Warning" dynamic="2" navigation="0" arg0="P10" arg1="sw1_a"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;led_out[0]&quot; SITE &quot;T11&quot; ;&quot;: " arg1="T11"  />
@@ -1724,20 +1569,24 @@ Design Summary:
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;led_out[2]&quot; SITE &quot;R16&quot; ;&quot;: " arg1="R16"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;led_out[1]&quot; SITE &quot;T10&quot; ;&quot;: " arg1="T10"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;polarity[2]&quot; SITE &quot;D3&quot; ;&quot;: " arg1="D3"  />
+    <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;polarity[1]&quot; SITE &quot;D1&quot; ;&quot;: " arg1="D1"  />
+    <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;polarity[0]&quot; SITE &quot;D2&quot; ;&quot;: " arg1="D2"  />
+    <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw2_pb&quot; SITE &quot;P13&quot; ;&quot;: " arg1="P13"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw2_b&quot; SITE &quot;P15&quot; ;&quot;: " arg1="P15"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw2_a&quot; SITE &quot;P14&quot; ;&quot;: " arg1="P14"  />
+    <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw1_pb&quot; SITE &quot;N12&quot; ;&quot;: " arg1="N12"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw1_b&quot; SITE &quot;P11&quot; ;&quot;: " arg1="P11"  />
     <postMsg mid="1103694" type="Warning" dynamic="2" navigation="0" arg0="Semantic error in &quot;LOCATE COMP &quot;sw1_a&quot; SITE &quot;P10&quot; ;&quot;: " arg1="P10"  />
  
 
-   Number of warnings:  304
+   Number of warnings:  142
    Number of errors:    0
 
 
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 36 MB
+Peak Memory Usage: 37 MB
 
 Dumping design to file study_001_impl1_map.ncd.
 
@@ -1764,7 +1613,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Thu Nov 03 19:05:27 2022
+Fri Nov 04 15:30:18 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1774,7 +1623,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o study_001_impl1.tw1 -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml study_001_impl1_map.ncd study_001_impl1.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o study_001_impl1.tw1 -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml study_001_impl1_map.ncd study_001_impl1.prf 
 Design file:     study_001_impl1_map.ncd
 Preference file: study_001_impl1.prf
 Device,speed:    LCMXO2-2000ZE,1
@@ -1790,14 +1639,14 @@ BLOCK RESETPATHS
 Timing summary (Setup):
 ---------------
 
-Timing errors: 0  Score: 0
-Cumulative negative slack: 0
+Timing errors: 43  Score: 7933280
+Cumulative negative slack: 7933280
 
-Constraints cover 3259 paths, 3 nets, and 855 connections (82.77% coverage)
+Constraints cover 9175 paths, 7 nets, and 1345 connections (79.77% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Thu Nov 03 19:05:27 2022
+Fri Nov 04 15:30:18 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1807,7 +1656,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o study_001_impl1.tw1 -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml study_001_impl1_map.ncd study_001_impl1.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o study_001_impl1.tw1 -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml study_001_impl1_map.ncd study_001_impl1.prf 
 Design file:     study_001_impl1_map.ncd
 Preference file: study_001_impl1.prf
 Device,speed:    LCMXO2-2000ZE,M
@@ -1826,23 +1675,23 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3259 paths, 3 nets, and 855 connections (82.77% coverage)
+Constraints cover 9175 paths, 7 nets, and 1345 connections (79.77% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 0 (setup), 0 (hold)
-Score: 0 (setup), 0 (hold)
-Cumulative negative slack: 0 (0+0)
+Timing errors: 43 (setup), 0 (hold)
+Score: 7933280 (setup), 0 (hold)
+Cumulative negative slack: 7933280 (7933280+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 51 MB
+Peak Memory Usage: 52 MB
 
 
 ldbanno "study_001_impl1_map.ncd" -n Verilog -o "study_001_impl1_mapvo.vo" -w -neg
@@ -1872,7 +1721,7 @@ Writing SDF timing to file study_001_impl1_mapvo.sdf
     <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 46 MB
+Peak Memory Usage: 50 MB
 
 mpartrce -p "study_001_impl1.p2t" -f "study_001_impl1.p3t" -tf "study_001_impl1.pt" "study_001_impl1_map.ncd" "study_001_impl1.ncd"
 
@@ -1881,10 +1730,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "study_001_impl1_map.ncd"
-Thu Nov 03 19:05:29 2022
+Fri Nov 04 15:30:19 2022
 
 PAR: Place And Route Diamond (64-bit) 3.12.1.454.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 study_001_impl1_map.ncd study_001_impl1.dir/5_1.ncd study_001_impl1.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 study_001_impl1_map.ncd study_001_impl1.dir/5_1.ncd study_001_impl1.prf
 Preference file: study_001_impl1.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -1905,28 +1754,31 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   65+4(JTAG)/216     32% used
-                  65+4(JTAG)/80      86% bonded
-   IOLOGIC           39/216          18% used
+   PIO (prelim)   69+4(JTAG)/216     34% used
+                  69+4(JTAG)/80      91% bonded
+   IOLOGIC           41/216          18% used
 
-   SLICE            138/1056         13% used
+   SLICE            181/1056         17% used
 
    GSR                1/1           100% used
+   OSC                1/1           100% used
 
 
-Number of Signals: 484
-Number of Connections: 1033
+Number of Signals: 620
+Number of Connections: 1686
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
 
 Pin Constraint Summary:
-   0 out of 65 pins locked (0% locked).
+   0 out of 69 pins locked (0% locked).
 
-The following 1 signal is selected to use the primary clock routing resources:
-    w_div4_clk (driver: SLICE_141, clk load #: 30)
+The following 2 signals are selected to use the primary clock routing resources:
+    w_clk (driver: internal_osc, clk load #: 129)
+    w_div4_clk (driver: SLICE_170, clk load #: 30)
 
 
 The following 3 signals are selected to use the secondary clock routing resources:
+    u_cg_fsm/un1_i_polarity_1 (driver: u_cg_fsm/SLICE_150, clk load #: 0, sr load #: 0, ce load #: 24)
     u_cg_fsm.c_cathod_phase_en_0_sqmuxa (driver: SLICE_210, clk load #: 0, sr load #: 0, ce load #: 16)
-    u_cg_fsm/un1_i_polarity_1 (driver: u_cg_fsm/SLICE_201, clk load #: 0, sr load #: 0, ce load #: 16)
     sw1_az (driver: sw1_a, clk load #: 7, sr load #: 0, ce load #: 0)
 
 Signal i_rst_n_c is selected as Global Set/Reset.
@@ -1936,14 +1788,14 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-....................
-Placer score = 67173.
-Finished Placer Phase 1.  REAL time: 8 secs 
+............
+Placer score = 7262948.
+Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  66874
-Finished Placer Phase 2.  REAL time: 8 secs 
+Placer score =  7248211
+Finished Placer Phase 2.  REAL time: 5 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1955,12 +1807,13 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY "w_div4_clk" from Q0 on comp "SLICE_141" on site "R2C14C", clk load = 30
-  SECONDARY "u_cg_fsm.c_cathod_phase_en_0_sqmuxa" from F0 on comp "SLICE_210" on site "R9C13B", clk load = 0, ce load = 16, sr load = 0
-  SECONDARY "u_cg_fsm/un1_i_polarity_1" from F1 on comp "u_cg_fsm/SLICE_201" on site "R9C15B", clk load = 0, ce load = 16, sr load = 0
+  PRIMARY "w_clk" from OSC on comp "internal_osc" on site "OSC", clk load = 129
+  PRIMARY "w_div4_clk" from Q0 on comp "SLICE_170" on site "R2C14B", clk load = 30
+  SECONDARY "u_cg_fsm/un1_i_polarity_1" from F1 on comp "u_cg_fsm/SLICE_150" on site "R9C15D", clk load = 0, ce load = 24, sr load = 0
+  SECONDARY "u_cg_fsm.c_cathod_phase_en_0_sqmuxa" from F0 on comp "SLICE_210" on site "R9C15C", clk load = 0, ce load = 16, sr load = 0
   SECONDARY "sw1_az" from comp "sw1_a" on CLK_PIN site "20 (PL12A)", clk load = 7, ce load = 0, sr load = 0
 
-  PRIMARY  : 1 out of 8 (12%)
+  PRIMARY  : 2 out of 8 (25%)
   SECONDARY: 3 out of 8 (37%)
 
 Edge Clocks:
@@ -1970,35 +1823,35 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   65 + 4(JTAG) out of 216 (31.9%) PIO sites used.
-   65 + 4(JTAG) out of 80 (86.3%) bonded PIO sites used.
-   Number of PIO comps: 65; differential: 0.
+   69 + 4(JTAG) out of 216 (33.8%) PIO sites used.
+   69 + 4(JTAG) out of 80 (91.3%) bonded PIO sites used.
+   Number of PIO comps: 69; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 13 / 19 ( 68%) | 3.3V       | -         |
-| 1        | 17 / 21 ( 80%) | 3.3V       | -         |
-| 2        | 20 / 20 (100%) | 3.3V       | -         |
+| 0        | 15 / 19 ( 78%) | 3.3V       | -         |
+| 1        | 21 / 21 (100%) | 3.3V       | -         |
+| 2        | 19 / 20 ( 95%) | 3.3V       | -         |
 | 3        | 3 / 6 ( 50%)   | 3.3V       | -         |
-| 4        | 6 / 6 (100%)   | 3.3V       | -         |
+| 4        | 5 / 6 ( 83%)   | 3.3V       | -         |
 | 5        | 6 / 8 ( 75%)   | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 3 secs 
+Total placer CPU time: 1 secs 
 
 Dumping design to file study_001_impl1.dir/5_1.ncd.
 
-0 connections routed; 1033 unrouted.
+0 connections routed; 1686 unrouted.
 Starting router resource preassignment
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=sw2_az loads=4 clock_loads=4"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=w_db_clk loads=5 clock_loads=4&#xA;   Signal=w_div64x64_clk_0 loads=3 clock_loads=2&#xA;   Signal=w_div64_clk_0 loads=5 clock_loads=4&#xA;   Signal=sw2_az loads=4 clock_loads=4"  />
 
-Completed router resource preassignment. Real time: 10 secs 
+Completed router resource preassignment. Real time: 8 secs 
 
-Start NBR router at 19:05:39 11/03/22
+Start NBR router at 15:30:27 11/04/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -2013,76 +1866,88 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 19:05:39 11/03/22
+Start NBR special constraint process at 15:30:27 11/04/22
 
-Start NBR section for initial routing at 19:05:40 11/03/22
+Start NBR section for initial routing at 15:30:27 11/04/22
+Level 1, iteration 1
+4(0.00%) conflicts; 1271(75.39%) untouched conns; 28142227 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -728.352ns/-28142.228ns; real time: 8 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 1272(75.44%) untouched conns; 28378857 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -748.736ns/-28378.858ns; real time: 8 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 1271(75.39%) untouched conns; 28164742 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -728.352ns/-28164.743ns; real time: 8 secs 
 Level 4, iteration 1
-26(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.120ns/0.000ns; real time: 11 secs 
+26(0.02%) conflicts; 0(0.00%) untouched conn; 28913380 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28913.381ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 19:05:40 11/03/22
+Start NBR section for normal routing at 15:30:28 11/04/22
 Level 4, iteration 1
-10(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.096ns/0.000ns; real time: 11 secs 
+11(0.01%) conflicts; 0(0.00%) untouched conn; 28913380 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28913.381ns; real time: 9 secs 
 Level 4, iteration 2
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.096ns/0.000ns; real time: 11 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 28914425 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28914.426ns; real time: 9 secs 
 Level 4, iteration 3
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.096ns/0.000ns; real time: 11 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 28914425 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28914.426ns; real time: 9 secs 
 Level 4, iteration 4
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.096ns/0.000ns; real time: 11 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 28914425 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28914.426ns; real time: 9 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 19:05:40 11/03/22
-
-Start NBR section for re-routing at 19:05:40 11/03/22
+Start NBR section for performance tuning (iteration 1) at 15:30:28 11/04/22
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 42.096ns/0.000ns; real time: 11 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 28914425 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28914.426ns; real time: 9 secs 
 
-Start NBR section for post-routing at 19:05:40 11/03/22
+Start NBR section for re-routing at 15:30:28 11/04/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 28914425 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -734.304ns/-28914.426ns; real time: 9 secs 
+
+Start NBR section for post-routing at 15:30:28 11/04/22
 
 End NBR router with 0 unrouted connection
 
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 42.096ns
-  Timing score<setup> : 0
+  Number of connections with timing violations : 50 (2.97%)
+  Estimated worst slack<setup> : -734.304ns
+  Timing score<setup> : 26288384
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=sw2_az loads=4 clock_loads=4"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=w_db_clk loads=5 clock_loads=4&#xA;   Signal=w_div64x64_clk_0 loads=3 clock_loads=2&#xA;   Signal=w_div64_clk_0 loads=5 clock_loads=4&#xA;   Signal=sw2_az loads=4 clock_loads=4"  />
 
-Total CPU time 5 secs 
-Total REAL time: 12 secs 
+Total CPU time 2 secs 
+Total REAL time: 9 secs 
 Completely routed.
-End of route.  1033 routed (100.00%); 0 unrouted.
+End of route.  1686 routed (100.00%); 0 unrouted.
 
-Hold time timing score: 0, hold timing errors: 0
+Hold time timing score: 66, hold timing errors: 38
 
-Timing score: 0 
+Timing score: 26288384 
 
 Dumping design to file study_001_impl1.dir/5_1.ncd.
 
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 42.096
-PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.686
-PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -734.304
+PAR_SUMMARY::Timing score<setup/<ns>> = 26288.384
+PAR_SUMMARY::Worst  slack<hold /<ns>> = -2.695
+PAR_SUMMARY::Timing score<hold /<ns>> = 66.970
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 5 secs 
-Total REAL time to completion: 12 secs 
+Total CPU  time to completion: 2 secs 
+Total REAL time to completion: 9 secs 
 
 par done!
 
@@ -2119,7 +1984,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
-Thu Nov 03 19:05:41 2022
+Fri Nov 04 15:30:29 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -2129,7 +1994,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o study_001_impl1.twr -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml study_001_impl1.ncd study_001_impl1.prf 
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o study_001_impl1.twr -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml study_001_impl1.ncd study_001_impl1.prf 
 Design file:     study_001_impl1.ncd
 Preference file: study_001_impl1.prf
 Device,speed:    LCMXO2-2000ZE,1
@@ -2145,14 +2010,14 @@ BLOCK RESETPATHS
 Timing summary (Setup):
 ---------------
 
-Timing errors: 0  Score: 0
-Cumulative negative slack: 0
+Timing errors: 43  Score: 26288384
+Cumulative negative slack: 26288384
 
-Constraints cover 3259 paths, 3 nets, and 855 connections (82.77% coverage)
+Constraints cover 9175 paths, 7 nets, and 1345 connections (79.77% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
-Thu Nov 03 19:05:41 2022
+Fri Nov 04 15:30:29 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -2162,7 +2027,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o study_001_impl1.twr -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml study_001_impl1.ncd study_001_impl1.prf 
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o study_001_impl1.twr -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml study_001_impl1.ncd study_001_impl1.prf 
 Design file:     study_001_impl1.ncd
 Preference file: study_001_impl1.prf
 Device,speed:    LCMXO2-2000ZE,m
@@ -2178,26 +2043,26 @@ BLOCK RESETPATHS
 Timing summary (Hold):
 ---------------
 
-Timing errors: 0  Score: 0
-Cumulative negative slack: 0
+Timing errors: 38  Score: 66970
+Cumulative negative slack: 66970
 
-Constraints cover 3259 paths, 3 nets, and 855 connections (82.77% coverage)
+Constraints cover 9175 paths, 7 nets, and 1345 connections (79.77% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 0 (setup), 0 (hold)
-Score: 0 (setup), 0 (hold)
-Cumulative negative slack: 0 (0+0)
+Timing errors: 43 (setup), 38 (hold)
+Score: 26288384 (setup), 66970 (hold)
+Cumulative negative slack: 26355354 (26288384+66970)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 51 MB
+Peak Memory Usage: 53 MB
 
 
 iotiming  "study_001_impl1.ncd" "study_001_impl1.prf"
@@ -2300,221 +2165,6 @@ Writing SDF timing to file study_001_impl1_vo.sdf
     <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 48 MB
+Peak Memory Usage: 53 MB
 
 tmcheck -par "study_001_impl1.par" 
-
-bitgen -f "study_001_impl1.t2b" -w "study_001_impl1.ncd"  -jedec "study_001_impl1.prf"
-
-
-BITGEN: Bitstream Generator Diamond (64-bit) 3.12.1.454
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-
-
-Loading design for application Bitgen from file study_001_impl1.ncd.
-Design name: ci_stim_fpga_wrapper
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO2-2000ZE
-Package:     TQFP100
-Performance: 1
-Loading device for application Bitgen from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
-Package Status:                     Final          Version 1.44.
-Performance Hardware Data Status:   Final          Version 34.4.
-
-Running DRC.
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_0" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_0" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_4" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_4" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_5" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_5" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_6" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_6" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_7" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_9" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_9" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_10" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_10" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_11" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_11" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_12" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_12" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_13" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_13" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_14" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_14" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_25" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_25" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_26" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_26" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_27" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_27" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_28" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_28" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_34" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_34" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_119" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_121" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_124" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_127" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_131" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_131" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_132" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_133" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_134" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_137" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_137" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_138" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_139" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_140" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_141" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_163" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_164" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_164" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_165" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_165" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_166" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_166" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_167" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_167" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_168" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_168" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_169" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_169" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_170" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_170" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_171" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_171" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_172" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_172" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_173" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_173" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_174" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_174" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_175" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_175" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_176" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_176" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_177" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_177" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_178" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_178" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_184" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_184" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_185" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_185" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_186" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_186" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_187" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_187" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_188" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_188" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_189" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_189" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_190" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_190" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_191" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_191" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_192" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_192" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_194" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_194" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_195" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_195" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_196" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_196" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_197" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_197" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_198" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_198" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_199" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_199" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_200" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_200" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_201" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_202" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_202" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_203" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_203" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_204" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_204" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_205" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_205" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_206" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_206" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_207" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_207" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_208" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_208" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_209" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="u_cg_fsm/SLICE_209" arg1="REG0"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_210" arg1="REG1"  />
-    <postMsg mid="71011198" type="Warning" dynamic="2" navigation="0" arg0="SLICE_210" arg1="REG0"  />
-DRC detected 0 errors and 128 warnings.
-Reading Preference File from study_001_impl1.prf.
-
-Preference Summary:
-+---------------------------------+---------------------------------+
-|  Preference                     |  Current Setting                |
-+---------------------------------+---------------------------------+
-|                         RamCfg  |                        Reset**  |
-+---------------------------------+---------------------------------+
-|                     MCCLK_FREQ  |                         2.08**  |
-+---------------------------------+---------------------------------+
-|                  CONFIG_SECURE  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                          INBUF  |                           ON**  |
-+---------------------------------+---------------------------------+
-|                      JTAG_PORT  |                       ENABLE**  |
-+---------------------------------+---------------------------------+
-|                       SDM_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                 SLAVE_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                MASTER_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                       I2C_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  CONFIGURATION  |                          CFG**  |
-+---------------------------------+---------------------------------+
-|                COMPRESS_CONFIG  |                           ON**  |
-+---------------------------------+---------------------------------+
-|                        MY_ASSP  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|               ONE_TIME_PROGRAM  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                 ENABLE_TRANSFR  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  SHAREDEBRINIT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|            BACKGROUND_RECONFIG  |                          OFF**  |
-+---------------------------------+---------------------------------+
- *  Default setting.
- ** The specified setting matches the default setting.
-
-
-Creating bit map...
- 
-Bitstream Status: Final           Version 1.95.
- 
-Saving bit stream in "study_001_impl1.jed".
- 
-===========
-UFM Summary.
-===========
-UFM Size:        639 Pages (128*639 Bits).
-UFM Utilization: General Purpose Flash Memory.
- 
-Available General Purpose Flash Memory:  639 Pages (Page 0 to Page 638).
-Initialized UFM Pages:                     0 Page.
- 
-Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 260 MB

@@ -1,12 +1,11 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: MO111 :"c:\users\eidos\desktop\common\db\top\ci_stim_fpga.v":120:6:120:10|Tristate driver w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) on net w_clk_1 (in view: work.ci_stim_fpga_wrapper(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_5(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_3(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\eidos\desktop\common\db\design\ci_if_cdc.v":50:0:50:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_5(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_3(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\eidos\github\fpga_pwm_fsm_practice\common\db\design\ci_if_cdc.v":52:0:52:5|Removing sequential instance r_slave_ack[2:0] (in view: work.ci_if_cdc_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=8 on top level netlist ci_stim_fpga_wrapper 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

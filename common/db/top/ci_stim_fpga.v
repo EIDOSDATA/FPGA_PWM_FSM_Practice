@@ -10,7 +10,8 @@
 
 `define NOM_FREQ	("2.5") 
 
-module ci_stim_fpga_wrapper (	
+module ci_stim_fpga_wrapper 
+(	
 	/**
 	- FPGA related signals
 	*/
@@ -85,7 +86,7 @@ module ci_stim_fpga_wrapper (
 	input [2:0] polarity/* synthesis LOC="D3,D1,D2" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33" PULLMODE="DOWN,UP,DOWN */ ;
 	
 	/* output ports */
-  output [15:0] led_out/* synthesis LOC="D7,E5,E6,E8,F4,H6,J5,J6,R10,R11,R13,R14,R15,R16,T10,T11" 
+	output [15:0] led_out/* synthesis LOC="D7,E5,E6,E8,F4,H6,J5,J6,R10,R11,R13,R14,R15,R16,T10,T11" 
 	                                  IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */ ;	
 
     /* Level shifter control */
@@ -100,7 +101,7 @@ module ci_stim_fpga_wrapper (
 	- Dual dac stimulator related signals 
 	*/
 	/* input ports */  
-  input [7:0] stim_comp_err/* synthesis LOC="H1,G4,G3,G2,G1,F3,F2,F1" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" PULLMODE="DOWN,DOWN,DOWN,DOWN,DOWN,DOWN,DOWN,DOWN" */ ;
+	input [7:0] stim_comp_err/* synthesis LOC="H1,G4,G3,G2,G1,F3,F2,F1" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" PULLMODE="DOWN,DOWN,DOWN,DOWN,DOWN,DOWN,DOWN,DOWN" */ ;
 	
 	output stim_comp_en_n/* synthesis LOC="N16" IO_TYPE="LVCMOS33" */;
 	
@@ -108,8 +109,8 @@ module ci_stim_fpga_wrapper (
 	output [7:0] stim_an/* synthesis LOC="E13,D16,D14,C16,C14,B16,B14,A14" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
 	output [7:0] stim_ca/* synthesis LOC="E16,E11,D15,D13,C15,C13,B15,A15" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
 	
-  output [7:0] stim_dac0_val/* synthesis LOC="L12,K15,K13,J16,J14,J12,H16,H13" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
-  output [7:0] stim_dac1_val/* synthesis LOC="L13,K16,K14,K11,J15,J13,J11,H15" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
+	output [7:0] stim_dac0_val/* synthesis LOC="L12,K15,K13,J16,J14,J12,H16,H13" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
+	output [7:0] stim_dac1_val/* synthesis LOC="L13,K16,K14,K11,J15,J13,J11,H15" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33,LVCMOS33" */;
 		
 	output [2:0] stim_bcg0_sel/* synthesis LOC="N14,M16,L15" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33" */;
 	output [2:0] stim_bcg1_sel/* synthesis LOC="N13,L16,L14" IO_TYPE="LVCMOS33,LVCMOS33,LVCMOS33" */;
@@ -173,7 +174,7 @@ module ci_stim_fpga_wrapper (
 	
 	reg mode_disp_en;
 
-  wire [7:0] w_debug_fsm_led;
+	wire [7:0] w_debug_fsm_led;
 	wire [7:0] w_debug_wrap_led;
 						 
 	reg [15:0] led_out;
@@ -190,6 +191,7 @@ module ci_stim_fpga_wrapper (
 	/* Lattice XP2 internal Oscillator */	
 	osce #(.NOM_FREQ(`NOM_FREQ))  internal_osc (.osc(w_clk));
 	`endif
+	
 `else
 	/* Lattice GSR */
 	/* GSR and PUR should make the instance name with pre-defined name which is "GSR_INST" and "PUR_INST" in each.
@@ -197,14 +199,13 @@ module ci_stim_fpga_wrapper (
 	   the tool should be able to find the instance automatically. This is the reason why instance name is fixed. */
 	GSR GSR_INST (.GSR(i_rst_n));
 
-//`define XO2
+	//`define XO2
 	`ifdef XO2
-	`define NOM_FREQ ("9.5")
-	
+	`define NOM_FREQ ("9.5")	
 	/* Lattice XP2 internal Oscillator */	
 	OSCH #(.NOM_FREQ(`NOM_FREQ))  internal_osc (.STDBY(1'b0), .OSC(w_clk), .SEDSTDBY());
+	
 	`else
-
 	/* Lattice XP2 internal Oscillator */	
 	OSCE #(.NOM_FREQ(`NOM_FREQ))  internal_osc (.OSC(w_clk));
 	`endif
@@ -223,7 +224,8 @@ module ci_stim_fpga_wrapper (
 	
 	wire w_cg_fsm_clk = /*w_clk; */ /*w_div64_clk;*/ w_clk;
 	
-	ci_if_cdc u_trigger_en (
+	ci_if_cdc u_trigger_en
+	(
 		.i_rst_n(i_rst_n),
 		.i_mclk(w_clk),
 		.i_sclk(w_cg_fsm_clk),
@@ -235,7 +237,8 @@ module ci_stim_fpga_wrapper (
 		.o_rdy()		
 	);	
 	
-	stim_cg_fsm u_cg_fsm (
+	stim_cg_fsm u_cg_fsm
+	(
 		.i_clk(w_cg_fsm_clk),
 		//.i_slow_clk(w_slow_clk),
 		.i_slow_clk(w_div4_clk),
@@ -256,27 +259,29 @@ module ci_stim_fpga_wrapper (
 		
 		.i_stim_comp_err(stim_comp_err),
 		.o_stim_comp_en_n(stim_comp_en_n),
-	
-	  .o_stim_an(stim_an),
-	  .o_stim_ca(stim_ca),
+		
+		.o_stim_an(stim_an),
+		.o_stim_ca(stim_ca),
 
-	  .o_stim_dac0_val(stim_dac0_val),
-	  .o_stim_dac1_val(stim_dac1_val),
+		.o_stim_dac0_val(stim_dac0_val),
+		.o_stim_dac1_val(stim_dac1_val),
 	
-	  .o_stim_bcg0_sel(stim_bcg0_sel),
-	  .o_stim_bcg1_sel(stim_bcg1_sel),
+		.o_stim_bcg0_sel(stim_bcg0_sel),
+		.o_stim_bcg1_sel(stim_bcg1_sel),
 		
 		.o_debug_led(w_debug_fsm_led)
 	);
 	
-	debounce u_debounce_sw1 (
+	debounce u_debounce_sw1
+	(
 		.i_clk(w_db_clk),
 		.i_rst_n(i_rst_n),
 		.i_pb_in(sw1_pb),
 		.o_db_pb(w_db_sw1_pb)
 	);
 	
-	debounce u_debounce_sw2 (
+	debounce u_debounce_sw2
+	(
 		.i_clk(w_db_clk),
 		.i_rst_n(i_rst_n),
 		.i_pb_in(sw2_pb),
@@ -340,114 +345,139 @@ module ci_stim_fpga_wrapper (
 	`define MAX_CHANNEL_NUM		(256) /* 8 channel */
 	`define MAX_DISPLAY_NUM		(8)   /* 9 items */
 	
-	always @(*)
-		begin			 			
-			if (polarity[2])
-			begin
-				set_mode_display = 0;
+	always @(*)	
+	begin			 			
+		if (polarity[2])
+		begin
+			set_mode_display = 0;
 
-				sw1_max_count_num = 0;
-				sw2_max_count_num = 2;
-				
-				c_duration = 8'd50;
-				c_rate = 8'd250;
+			sw1_max_count_num = 0;
+			sw2_max_count_num = 2;
+			
+			c_duration = 8'd50;
+			c_rate = 8'd250;
 
-				c_channel_0 = 0;
-				c_channel_1 = 1;
+			c_channel_0 = 0;
+			c_channel_1 = 1;
+			
+			c_dac_amp_0 = r_dac_amp_0;
+			c_dac_amp_1 = r_dac_amp_1;
 				
-				c_dac_amp_0 = r_dac_amp_0;
-				c_dac_amp_1 = r_dac_amp_1;
+			case (/*mode*/sw2_counter)
+				3'b001:	
+				begin
+					sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
+					
+					c_dac_amp_0 = sw1_counter;
+				end
 				
-				case (/*mode*/sw2_counter)
-					3'b001:
+				3'b010:	
+				begin
+					sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
+				
+					c_dac_amp_1 = sw1_counter;
+				end
+				
+				3'b000:	
+				begin
+					set_mode_display = 1;
+					sw1_max_count_num = `MAX_DISPLAY_NUM - 1;
+				end					
+				default:;
+			endcase
+		end
+		
+		else
+		begin
+			set_mode_display = 0;
+			
+			sw1_max_count_num = 0;
+			sw2_max_count_num = 6;
+			
+			c_rate = r_rate;
+			c_duration = r_duration;
+			c_dac_amp_0 = r_dac_amp_0;
+			c_dac_amp_1 = r_dac_amp_1;
+			c_channel_0 = r_channel_0;
+			c_channel_1 = r_channel_1;
+		
+			case (/*mode*/sw2_counter)
+				3'b001: 
+				begin
+					sw1_max_count_num = `MAX_RATE_NUM - 1;
+				
+					if (w_sw1_pb_p)
 					begin
-						sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
-						
+						c_rate = sw1_counter;
+					end
+				end
+				
+				3'b010:
+				begin
+					sw1_max_count_num = `MAX_DURATION_NUM - 1;
+				
+					if (w_sw1_pb_p)
+					begin
+						c_duration = sw1_counter;
+					end
+				end
+				
+				3'b011:
+				begin
+					sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
+				
+					if (w_sw1_pb_p)
+					begin
 						c_dac_amp_0 = sw1_counter;
 					end
-					3'b010:
+				end
+				
+				3'b100:
+				begin
+					sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
+				
+					if (w_sw1_pb_p)
 					begin
-						sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
-					
 						c_dac_amp_1 = sw1_counter;
 					end
-					3'b000:
+				end		
+				
+				3'b101:
+				begin
+					sw1_max_count_num = `MAX_CHANNEL_NUM - 1;
+				
+					if (w_sw1_pb_p)
 					begin
-						set_mode_display = 1;
-						sw1_max_count_num = `MAX_DISPLAY_NUM - 1;
-					end					
-					default:;
-				endcase
-			end
-			else
-			begin
-				set_mode_display = 0;
-			
-				sw1_max_count_num = 0;
-				sw2_max_count_num = 6;
-			
-				c_rate = r_rate;
-				c_duration = r_duration;
-				c_dac_amp_0 = r_dac_amp_0;
-				c_dac_amp_1 = r_dac_amp_1;
-				c_channel_0 = r_channel_0;
-				c_channel_1 = r_channel_1;
-			
-				case (/*mode*/sw2_counter)
-					3'b001:
-					begin
-						sw1_max_count_num = `MAX_RATE_NUM - 1;
-					
-						if (w_sw1_pb_p)
-							c_rate = sw1_counter;
+						c_channel_0 = sw1_counter;
 					end
-					3'b010: 
+				end
+				
+				3'b110:
+				begin
+					sw1_max_count_num = `MAX_CHANNEL_NUM - 1;
+				
+					if (w_sw1_pb_p)
 					begin
-						sw1_max_count_num = `MAX_DURATION_NUM - 1;
-					
-						if (w_sw1_pb_p)
-							c_duration = sw1_counter;
+						c_channel_1 = sw1_counter;
 					end
-					3'b011: 
-					begin
-						sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
-					
-						if (w_sw1_pb_p)
-							c_dac_amp_0 = sw1_counter;
-					end
-					3'b100: 
-					begin
-						sw1_max_count_num = `MAX_AMPLITUDE_NUM - 1;
-					
-						if (w_sw1_pb_p)
-							c_dac_amp_1 = sw1_counter;
-					end							
-					3'b101:
-					begin
-						sw1_max_count_num = `MAX_CHANNEL_NUM - 1;
-					
-						if (w_sw1_pb_p) 
-							c_channel_0 = sw1_counter;
-					end
-					3'b110:
-					begin
-						sw1_max_count_num = `MAX_CHANNEL_NUM - 1;
-					
-						if (w_sw1_pb_p)
-							c_channel_1 = sw1_counter;
-					end
-					3'b000:
-					begin
-						set_mode_display = 1;
-						sw1_max_count_num = `MAX_DISPLAY_NUM - 1;
-					end
-					default:
+				end
+				
+				3'b000:
+				begin
+					set_mode_display = 1;
+					sw1_max_count_num = `MAX_DISPLAY_NUM - 1;
+				end
+				
+				default:
+				begin
 					/* 3'b111: Not used */;
-				endcase			
-			end
+				end				
+			endcase			
+		end
 	end
 
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
 		begin
 			r_rate <= 2;
@@ -457,8 +487,9 @@ module ci_stim_fpga_wrapper (
 			r_channel_0 <= 2;
 			r_channel_1 <= 5;
 		end
+		
 		else
-    begin
+		begin
 			r_rate <= c_rate;
 			r_dac_amp_0 <= c_dac_amp_0;
 			r_dac_amp_1 <= c_dac_amp_1;
@@ -466,173 +497,243 @@ module ci_stim_fpga_wrapper (
 			r_channel_0 <= c_channel_0;
 			r_channel_1 <= c_channel_1;
 		end
+	end
 		
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
 			r_mode <= 0;
+		end
+		
 		else
+		begin
 			r_mode <= /*mode*/sw2_counter;
+		end
+	end
 		
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
 			r_req_mode_transition <= 0;
-		else
-		if (r_mode != /*mode*/sw2_counter)
+		end
+		
+		else if (r_mode != /*mode*/sw2_counter)
+		begin
 			r_req_mode_transition <= 1;
-		else
-		if (w_async_ack_mode_transition_p)
+		end
+		
+		else if (w_async_ack_mode_transition_p)
+		begin
 			r_req_mode_transition <= 0;
+		end
+	end
 	
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
 			r_async_ack_mode_transition <= 0;
+		end
+		
 		else
+		begin
 			r_async_ack_mode_transition <= {r_async_ack_mode_transition[1:0],r_ack_mode_transition};
-			
+		end
+	end
+	/* ASSIGN */	
 	assign w_async_ack_mode_transition_p = r_async_ack_mode_transition[1] & ~r_async_ack_mode_transition[2];
+	/**********************/
 			
 	/* Assumption: r_req_mode_transition very quickly responds after r_ack_mode_transition goes high */
 	always @(posedge sw1_a or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
 			r_ack_mode_transition <= 0;
-		else
-		if (sw1_b == 1)
+		end
+		
+		else if (sw1_b == 1)
 		begin
 			if (r_req_mode_transition)
+			begin
 				r_ack_mode_transition <= 1;
+			end
+			
 			else
+			begin
 				r_ack_mode_transition <= 0;
+			end
 		end
+	end
 			
 	always @(posedge sw1_a or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
-		begin	   
-			sw1_counter <= 0;
-		end    
-	    else
-		if (r_ack_mode_transition)
-			sw1_counter <= 0;
-		else
-		if (set_mode_display == 0)
 		begin
-			if ((sw1_counter > sw1_max_count_num) ||
-				(sw1_counter < 0))
+			sw1_counter <= 0;
+		end
+		
+	    else if (r_ack_mode_transition)
+		begin
+			sw1_counter <= 0;
+		end
+		
+		else if (set_mode_display == 0)
+		begin
+			if ((sw1_counter > sw1_max_count_num) || (sw1_counter < 0))
 			begin
 				sw1_counter <= 0;
 			end
-			else
-			if (sw1_b == 0)
+			
+			else if (sw1_b == 0)
 			begin	   
 				if (sw1_counter <= sw1_max_count_num)
+				begin
 					sw1_counter <= sw1_counter + 1;
-			end			   
+				end
+			end
+			
 			else
 			begin
 				if (sw1_counter > 0)
+				begin
 					sw1_counter <= sw1_counter - 1;
-			end	
+				end
+			end
 		end
+	end
 
 	always @(posedge sw2_a or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
 		begin	   
 			sw2_counter <= 0;
-		end    
-	  else
-  	if ((sw2_counter > sw2_max_count_num) ||
-	  		(sw2_counter < 0))
+		end
+		
+		else if ((sw2_counter > sw2_max_count_num) || (sw2_counter < 0))
 		begin
 			sw2_counter <= 0;
 		end
-		else
-		if (sw2_b == 0)
+		
+		else if (sw2_b == 0)
 		begin	   
 			if (sw2_counter <= sw2_max_count_num)
+			begin
 				sw2_counter <= sw2_counter + 1;
-		end			   
+			end
+		end
+		
 		else
 		begin
 			if (sw2_counter > 0)
+			begin
 				sw2_counter <= sw2_counter - 1;
+			end
 		end	
+	end
 
 	always @(posedge sw1_a or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
     		display_item_num <= 0;
-		else
-		if (set_mode_display == 1)
+		end
+		
+		else if (set_mode_display == 1)
 		begin
 			if (display_item_num > sw1_max_count_num)
+			begin
 				display_item_num <= 0;
-			else
-			if (sw1_b == 0)
+			end
+			
+			else if (sw1_b == 0)
+			begin
 				display_item_num <= display_item_num + 1;
+			end
+			
 			else
+			begin
 				display_item_num <= 0;
+			end
 		end
+	end
 
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
 		begin
 			r_db_sw1_pb_d <= 2'b10; // after reset, one trigger pulse is generated automatically
 			r_db_sw2_pb_d <= 2'b11;
 		end
+		
 		else
 		begin
 			r_db_sw1_pb_d <= {r_db_sw1_pb_d[0],w_db_sw1_pb};
 			r_db_sw2_pb_d <= {r_db_sw2_pb_d[0],w_db_sw2_pb};
 		end
-	
+	end
+	/* ASSIGN */	
 	assign w_sw1_pb_p = r_db_sw1_pb_d[0] & ~r_db_sw1_pb_d[1];
 	assign w_sw2_pb_p = r_db_sw2_pb_d[0] & ~r_db_sw2_pb_d[1];
 	
 	assign w_trigger_en = (polarity[2]) ? w_sw1_pb_p : set_mode_display & w_sw1_pb_p;
+	/**********************/
 	
-  always @(posedge w_clk or negedge i_rst_n)
+	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
 		begin
 			mode_disp_en <= 0;
 		end
-		else
-		if (w_sw2_pb_p)
-    begin
+		
+		else if (w_sw2_pb_p)
+		begin
 			mode_disp_en <= ~mode_disp_en;
 		end
+	end
 		
 	/* 2.5Mhz clock generation for class E amp */
-	div4_clk u_div4_clk (
+	div4_clk u_div4_clk
+	(
 		.i_clk(w_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_div4_clk)
 	);	
 	
 	/* Slow clock generation for debouncing push button */
-	div64_clk u_div64_clk (
+	div64_clk u_div64_clk
+	(
 		.i_clk(w_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_div64_clk)
 	);	
 	
-	div64_clk u_div64x64_clk (
+	div64_clk u_div64x64_clk
+	(
 		.i_clk(w_div64_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_div64x64_clk)
 	);	
 	
-	div2_clk u_div2_clk (
+	div2_clk u_div2_clk
+	(
 		.i_clk(w_div64x64_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_db_clk)
 	);
 	
 	/* 10kHz clock (slow) generation for stimulation */
-	div4_clk u_div64x4_clk (
+	div4_clk u_div64x4_clk
+	(
 		.i_clk(w_div64_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_div64x4_clk)
 	);	
 	
-	div4_clk u_div64x4x4_clk (
+	div4_clk u_div64x4x4_clk
+	(
 		.i_clk(w_div64x4_clk),
 		.i_rst_n(i_rst_n),
 		.o_gen_clk(w_slow_clk)
@@ -641,43 +742,77 @@ module ci_stim_fpga_wrapper (
 	reg pb_p_test;
 	
 	always @(posedge w_clk or negedge i_rst_n)
+	begin
 		if (~i_rst_n)
+		begin
 			pb_p_test <= 0;
-		else
-		if (w_trigger_en)
+		end
+		
+		else if (w_trigger_en)
+		begin
 			pb_p_test <= ~pb_p_test;
-					 
+		end
+	end
+	/* ASSIGN */					 
 	assign w_debug_wrap_led = {r_req_mode_transition, r_ack_mode_transition, pb_p_test};
+	/**********************/
 
 	always @(*)
-  begin
+	begin
 		led_out = {8'b0,sw1_counter};
 		
 		if (mode_disp_en)
+		begin
 			led_out = {mode_disp_en,12'b0,sw2_counter[2:0]};
-		else
-		if (set_mode_display)
+		end
+		
+		else if (set_mode_display)
 		begin
 			case (display_item_num)
-				0: led_out = {8'b0,r_rate};
-				1: led_out = {8'b0,r_duration};
-				2: led_out = {8'b0,r_dac_amp_0};
-				3: led_out = {8'b0,r_dac_amp_1};
-				4: led_out = {8'b0,r_channel_0};
-				5: led_out = {8'b0,r_channel_1};
-				6: led_out = {8'b0,w_debug_fsm_led};
-				7: led_out = {8'b0,w_debug_wrap_led};
+				0:
+				begin
+					led_out = {8'b0,r_rate};			
+				end
+				1: 
+				begin
+					led_out = {8'b0,r_duration};
+				end
+				2: 
+				begin
+					led_out = {8'b0,r_dac_amp_0};
+				end
+				3: 
+				begin
+					led_out = {8'b0,r_dac_amp_1};
+				end
+				4: 
+				begin
+					led_out = {8'b0,r_channel_0};
+				end
+				5: 
+				begin
+					led_out = {8'b0,r_channel_1};
+				end
+				6: 
+				begin
+					led_out = {8'b0,w_debug_fsm_led};
+				end
+				7: 
+				begin
+					led_out = {8'b0,w_debug_wrap_led};
+				end
 				default:;
 			endcase
 		end
 	end
-					 
+
+	/* ASSIGN */	
 	assign clk_out = w_div4_clk;
 	assign data_out = 1'b0; /* PMOS = on, NMOS = off */
 	
-  /* Set level shifter direction
-     - Setting A port to B port */
-  assign lv_oe_n = 1'b0;
+	/* Set level shifter direction
+	- Setting A port to B port */
+	assign lv_oe_n = 1'b0;
 	assign lv_dir  = 1'b1;
 	
 endmodule

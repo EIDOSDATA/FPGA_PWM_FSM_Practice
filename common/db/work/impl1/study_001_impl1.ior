@@ -29,9 +29,9 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: TQFP100
 // ncd File: study_001_impl1.ncd
 // Version: Diamond (64-bit) 3.12.1.454
-// Written on Thu Nov 03 19:05:43 2022
+// Written on Fri Nov 04 15:30:31 2022
 // M: Minimum Performance Grade
-// iotiming study_001_impl1.ncd study_001_impl1.prf -gui -msgset C:/Users/eidos/Desktop/common/db/work/promote.xml
+// iotiming study_001_impl1.ncd study_001_impl1.prf -gui -msgset C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/promote.xml
 
 I/O Timing Report (All units are in ns)
 
@@ -41,37 +41,97 @@ Worst Case Results across Performance Grades (M, 3, 2, 1):
 
 Port        Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-polarity[2] sw1_a R    22.456      1      -3.191     M
-polarity[2] sw2_a R    13.461      1      -1.899     M
-sw1_b       sw1_a R    12.198      1       0.566     1
-sw2_b       sw2_a R    10.470      1       0.817     1
+polarity[2] sw1_a R    24.817      1      -2.915     M
+polarity[2] sw2_a R    13.896      1      -1.698     M
+sw1_b       sw1_a R    12.451      1       0.411     1
+sw2_b       sw2_a R     9.890      1       1.537     1
 
 
 // Clock to Output Delay
 
 Port       Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-led_out[0] sw1_a R    25.562         1        5.776          M
-led_out[0] sw2_a R    29.444         1        4.812          M
-led_out[1] sw1_a R    24.918         1        5.110          M
-led_out[1] sw2_a R    28.800         1        5.080          M
-led_out[2] sw1_a R    24.469         1        5.837          M
-led_out[2] sw2_a R    28.351         1        4.983          M
-led_out[3] sw1_a R    24.922         1        5.565          M
-led_out[3] sw2_a R    28.263         1        6.619          M
-led_out[4] sw1_a R    25.128         1        5.802          M
-led_out[4] sw2_a R    28.832         1        6.581          M
-led_out[5] sw1_a R    26.181         1        5.294          M
-led_out[5] sw2_a R    30.063         1        6.212          M
-led_out[6] sw1_a R    24.442         1        5.615          M
-led_out[6] sw2_a R    27.965         1        6.371          M
-led_out[7] sw1_a R    26.093         1        5.376          M
-led_out[7] sw2_a R    29.975         1        6.063          M
+led_out[0] sw1_a R    26.647         1        5.775          M
+led_out[0] sw2_a R    30.541         1        5.543          M
+led_out[1] sw1_a R    25.632         1        5.746          M
+led_out[1] sw2_a R    32.209         1        5.370          M
+led_out[2] sw1_a R    28.141         1        6.235          M
+led_out[2] sw2_a R    33.079         1        5.894          M
+led_out[3] sw1_a R    24.189         1        5.813          M
+led_out[3] sw2_a R    32.685         1        6.423          M
+led_out[4] sw1_a R    26.499         1        5.908          M
+led_out[4] sw2_a R    31.127         1        6.974          M
+led_out[5] sw1_a R    26.997         1        5.742          M
+led_out[5] sw2_a R    31.345         1        7.082          M
+led_out[6] sw1_a R    25.873         1        5.551          M
+led_out[6] sw2_a R    31.231         1        6.161          M
+led_out[7] sw1_a R    28.457         1        6.066          M
+led_out[7] sw2_a R    30.363         1        7.673          M
+
+
+// Internal_Clock to Input
+
+Port        Internal_Clock
+--------------------------------------------------------
+polarity[0] w_clk         
+polarity[1] w_clk         
+polarity[2] w_clk         
+sw1_pb      w_db_clk      
+sw2_pb      w_db_clk      
 
 
 // Internal_Clock to Output
 
-Port       Internal_Clock
+Port             Internal_Clock
 --------------------------------------------------------
-led_out[6] w_div4_clk    
+clk_out          w_clk         
+led_out[0]       w_clk         
+led_out[15]      w_clk         
+led_out[1]       w_clk         
+led_out[2]       w_clk         
+led_out[3]       w_clk         
+led_out[4]       w_clk         
+led_out[5]       w_clk         
+led_out[6]       w_clk         
+led_out[6]       w_div4_clk    
+led_out[7]       w_clk         
+stim_an[0]       w_clk         
+stim_an[1]       w_clk         
+stim_an[2]       w_clk         
+stim_an[3]       w_clk         
+stim_an[4]       w_clk         
+stim_an[5]       w_clk         
+stim_an[6]       w_clk         
+stim_an[7]       w_clk         
+stim_bcg0_sel[0] w_clk         
+stim_bcg0_sel[1] w_clk         
+stim_bcg0_sel[2] w_clk         
+stim_bcg1_sel[0] w_clk         
+stim_bcg1_sel[1] w_clk         
+stim_bcg1_sel[2] w_clk         
+stim_ca[0]       w_clk         
+stim_ca[1]       w_clk         
+stim_ca[2]       w_clk         
+stim_ca[3]       w_clk         
+stim_ca[4]       w_clk         
+stim_ca[5]       w_clk         
+stim_ca[6]       w_clk         
+stim_ca[7]       w_clk         
+stim_comp_en_n   w_clk         
+stim_dac0_val[0] w_clk         
+stim_dac0_val[1] w_clk         
+stim_dac0_val[2] w_clk         
+stim_dac0_val[3] w_clk         
+stim_dac0_val[4] w_clk         
+stim_dac0_val[5] w_clk         
+stim_dac0_val[6] w_clk         
+stim_dac0_val[7] w_clk         
+stim_dac1_val[0] w_clk         
+stim_dac1_val[1] w_clk         
+stim_dac1_val[2] w_clk         
+stim_dac1_val[3] w_clk         
+stim_dac1_val[4] w_clk         
+stim_dac1_val[5] w_clk         
+stim_dac1_val[6] w_clk         
+stim_dac1_val[7] w_clk         
 WARNING: you must also run trce with hold speed: 1

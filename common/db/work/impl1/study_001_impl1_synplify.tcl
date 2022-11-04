@@ -24,7 +24,7 @@ set_option -force_gsr false
 set_option -compiler_compatible 0
 set_option -dup false
 
-add_file -constraint {C:/Users/eidos/Desktop/common/db/sdc/common.sdc}
+add_file -constraint {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/sdc/common.sdc}
 set_option -default_enum_encoding default
 
 #simulation options
@@ -46,18 +46,17 @@ set_option -resolve_multiple_driver 0
 set_option -seqshift_no_replicate 0
 
 #-- add_file options
-set_option -include_path {C:/Users/eidos/Desktop/common/db/work}
-add_file -verilog -vlog_std v2001 {C:/Users/eidos/Desktop/common/db/design/ci_if_cdc.v}
-add_file -verilog -vlog_std v2001 {C:/Users/eidos/Desktop/common/db/design/debounce.v}
-add_file -verilog -vlog_std v2001 {C:/Users/eidos/Desktop/common/db/design/stim_cg_fsm.v}
-add_file -verilog -vlog_std v2001 {C:/Users/eidos/Desktop/common/db/design/fpga_clk_modules.v}
-add_file -verilog -vlog_std v2001 {C:/Users/eidos/Desktop/common/db/top/ci_stim_fpga.v}
+set_option -include_path {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work}
+set_option -hdl_define -set "XO2"
+add_file -verilog -vlog_std v2001 {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/design/ci_if_cdc.v}
+add_file -verilog -vlog_std v2001 {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/design/debounce.v}
+add_file -verilog -vlog_std v2001 {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/design/stim_cg_fsm.v}
+add_file -verilog -vlog_std v2001 {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/design/fpga_clk_modules.v}
+add_file -verilog -vlog_std v2001 {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/top/ci_stim_fpga.v}
 
-#-- top module name
-set_option -top_module ci_stim_fpga_wrapper
 
 #-- set result format/file last
-project -result_file {C:/Users/eidos/Desktop/common/db/work/impl1/study_001_impl1.edi}
+project -result_file {C:/Users/eidos/GitHub/FPGA_PWM_FSM_Practice/common/db/work/impl1/study_001_impl1.edi}
 
 #-- error message log file
 project -log_file {study_001_impl1.srf}

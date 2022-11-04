@@ -13,10 +13,10 @@ Hostname: TODOC-ECHO-LAPT
 
 Implementation : impl1
 
-# Written on Thu Nov  3 19:05:14 2022
+# Written on Fri Nov  4 15:30:07 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\Users\eidos\Desktop\common\db\sdc\common.sdc"
+Constraint File(s):      "C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\sdc\common.sdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -51,7 +51,7 @@ Clock Load Summary
                 Clock     Source                                   Clock Pin                                                   Non-clock Pin     Non-clock Pin            
 Clock           Load      Pin                                      Seq Example                                                 Seq Example       Comb Example             
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-rootClk         201       w_clk_1.OUT[0](tri)                      r_async_ack_mode_transition[2:0].C                          -                 -                        
+rootClk         201       internal_osc.OSC(OSCH)                   r_async_ack_mode_transition[2:0].C                          -                 -                        
 ck_div4         48        u_div4_clk.r_gen_clk.Q[0](dffre)         u_cg_fsm.r_sync_search_disabled_channel_phase_end_p_d.C     -                 -                        
 ck_div64        6         u_div64_clk.r_gen_clk.Q[0](dffre)        u_div64x64_clk.r_gen_clk.C                                  -                 ck_div64.I[0](keepbuf)   
 ck_div64x64     2         u_div64x64_clk.r_gen_clk.Q[0](dffre)     u_div2_clk.div2_count.C                                     -                 ck_div64x64.I[0](keepbuf)

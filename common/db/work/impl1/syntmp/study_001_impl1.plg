@@ -1,14 +1,14 @@
-@P:  Worst Slack : 53.048
+@P:  Worst Slack : 53.080
 @P:  ck_db - Estimated Frequency : 9.8 MHz
 @P:  ck_db - Requested Frequency : 0.1 MHz
 @P:  ck_db - Estimated Period : 102.285
 @P:  ck_db - Requested Period : 16000.000
 @P:  ck_db - Slack : 248.402
-@P:  ck_div4 - Estimated Frequency : 105.8 MHz
+@P:  ck_div4 - Estimated Frequency : 106.2 MHz
 @P:  ck_div4 - Requested Frequency : 16.0 MHz
-@P:  ck_div4 - Estimated Period : 9.452
+@P:  ck_div4 - Estimated Period : 9.420
 @P:  ck_div4 - Requested Period : 62.500
-@P:  ck_div4 - Slack : 53.048
+@P:  ck_div4 - Slack : 53.080
 @P:  ck_div64 - Estimated Frequency : 228.0 MHz
 @P:  ck_div64 - Requested Frequency : 0.1 MHz
 @P:  ck_div64 - Estimated Period : 4.386
@@ -39,7 +39,7 @@
 @P:  System - Estimated Period : NA
 @P:  System - Requested Period : 10.000
 @P:  System - Slack : NA
-@P:  Total Area : 248.0
+@P:  Total Area : 254.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -53,4 +53,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  CPU Time : 0h:00m:01s

@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\eidos\Desktop\common\db\work\impl1\synlog\study_001_impl1_fpga_mapper.srr</data>
+<data>C:\Users\eidos\GitHub\FPGA_PWM_FSM_Practice\common\db\work\impl1\synlog\study_001_impl1_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -23,8 +23,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>ck_div4</data>
 <data>16.0 MHz</data>
-<data>105.8 MHz</data>
-<data>53.048</data>
+<data>106.2 MHz</data>
+<data>53.080</data>
 </row>
 <row>
 <data>ck_div64</data>
